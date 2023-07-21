@@ -1,0 +1,45 @@
+body {
+	color: #44444C;
+	background-color: white;
+}
+
+#body-container {
+	display: flex;
+	justify-content: center;
+	height: 90vh;
+	align-items: center;
+}
+
+#form-container {
+	padding: 1.5em 2em;
+	border-radius: 5px;
+	border: 1px solid gray;
+	background-color: whitesmoke;
+}
+
+#form-container input, #form-container textarea {
+	margin-bottom: .5em;
+	width: 100%;
+	padding: .5em;
+	word-wrap: break-word;
+}
+
+#form-container #submit {
+	width: 5em;
+}
+
+#form-container textarea {
+	height: 10em;
+}
+
+#form-container label {
+	margin-top: 1em;
+}
+
+#description {
+	resize: none;
+}
+
+#navbar-container {
+	padding: .3em;
+}

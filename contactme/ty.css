@@ -1,0 +1,27 @@
+body {
+	color: #44444C;
+	background-color: white;
+}
+
+#box {
+	height: 50%;
+	padding: 5%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+	margin: 0 10%;
+	border: 1px solid black;
+	box-shadow: 10px 10px gray;
+}
+
+#body-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 40vh;
+}
+
+#navbar-container {
+	padding: .3em;
+}

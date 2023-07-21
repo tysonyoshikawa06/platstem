@@ -1,0 +1,1269 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-4WHB6FW45F"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		
+		  gtag('config', 'G-4WHB6FW45F');
+		</script>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Learning Resources</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+		<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="./learningresources/lr.css">
+	</head>
+
+
+
+	<body>
+		<nav class="navbar navbar-expand-md navbar-dark bg-dark" id="navbar">
+			<div id="navbar-container">
+				<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#collapse-nav">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="collapse-nav">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a href="index.html" class="nav-link active">Learning Resources</a>
+						</li>
+						<li class="nav-item">
+			              <a href="./research/research.html" class="nav-link">Research</a>
+			            </li>
+			            <li class="nav-item">
+			              <a href="./opportunities/opportunities.html" class="nav-link">Opportunities</a>
+			            </li>
+			            <li class="nav-item">
+			              <a href="./olympiadresources/olympiad_resources.html" class="nav-link">Olympiad Resources</a>
+			            </li>
+						<li class="nav-item">
+							<a href="./contactme/contact_me.html" class="nav-link">Contact Me</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+
+		<div data-keyboard="true" tabindex="-1" data-bs-backdrop="false" class="offcanvas offcanvas-start" id="offcanvas">
+    		<div class="offcanvas-header side-nav-component">
+    			<u><h3>Filters</h3></u>
+        		<button type="button" data-bs-dismiss="offcanvas" aria-label="Close" class="btn-close text-reset"></button>
+    		</div>
+    		<div class="offcanvas-body side-nav-component">
+	        	<ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-start" id="menu">
+					<label data-bs-toggle="collapse" data-bs-target=".cs-collapse" aria-expanded="false">💻 Computer Science</label>
+					<div class="sub collapse cs-collapse"> <!-- child -->
+						<input type="checkbox" id="ml-cb">
+						<label data-bs-toggle="collapse" data-bs-target="#ml-sub" aria-expanded="false">Machine Learning</label>
+					</div>
+					<div class="sub-sub collapse cs-collapse" id="ml-sub"> <!-- child-child -->
+						<input type="checkbox" class="ml-sub" id="mll-cb">
+						<label for="mll-cb">ML Languages</label>
+						<br>
+						<input type="checkbox" class="ml-sub" id="ann-cb">
+						<label for="ann-cb">Artificial Neural Networks</label>
+						<br>
+						<input type="checkbox" class="ml-sub" id="usl-cb">
+						<label for="usl-cb">Unsupervised Learning</label>
+						<br>
+						<input type="checkbox" class="ml-sub" id="sl-cb">
+						<label for="sl-cb">Supervised Learning</label>
+					</div>
+					<div class="sub collapse cs-collapse"> <!-- child -->
+						<input type="checkbox" id="sd-cb">
+						<label type="checkbox" data-bs-toggle="collapse" data-bs-target="#sd-sub" aria-expanded="false">Software Development</label>
+					</div>
+					<div class="sub-sub collapse cs-collapse" id="sd-sub"> <!-- child-child -->
+						<input type="checkbox" class="sd-sub" id="sdl-cb">
+						<label for="sdl-cb">SD Languages</label>
+						<br>
+						<input type="checkbox" class="sd-sub" id="cw-cb">
+						<label for="cw-cb">Creating Websites</label>
+						<br>
+						<input type="checkbox" class="sd-sub" id="ca-cb">
+						<label for="ca-cb">Creating Apps</label>
+					</div>
+					<div class="sub collapse cs-collapse"> <!-- child -->
+						<input type="checkbox" id="id-cb">
+						<label type="checkbox" data-bs-toggle="collapse" data-bs-target="#id-sub" aria-expanded="false">Interface Design</label>
+					</div>
+					<div class="sub-sub collapse cs-collapse" id="id-sub"> <!-- child-child -->
+						<input type="checkbox" class="id-sub" id="ui-cb">
+						<label for="ui-cb">User Interface</label>
+						<br>
+						<input type="checkbox" class="id-sub" id="ux-cb">
+						<label for="ux-cb">User Experience</label>
+					</div>
+					<label data-bs-toggle="collapse" data-bs-target=".math-collapse" aria-expanded="false">➕ Mathematics</label>
+					<div class="sub collapse math-collapse"> <!-- child -->
+						<input type="checkbox" id="alg-cb">
+						<label data-bs-toggle="collapse" data-bs-target="#alg-sub" aria-expanded="false">Algebra</label>
+					</div> 
+					<div class="sub-sub collapse math-collapse" id="alg-sub"> <!-- child-child -->
+						<input type="checkbox" class="alg-sub" id="la-cb">
+						<label for="la-cb">Linear Algebra</label>
+						<br>
+						<input type="checkbox" class="alg-sub" id="aa-cb">
+						<label for="aa-cb">Abstract Algebra</label>
+					</div>
+					<div class="sub collapse math-collapse"> <!-- child -->
+						<input type="checkbox" id="calc-cb">
+						<label data-bs-toggle="collapse" data-bs-target="#calc-sub" aria-expanded="false">Calculus</label>
+					</div> 
+					<div class="sub-sub collapse math-collapse" id="calc-sub"> <!-- child-child -->
+						<input type="checkbox" class="calc-sub" id="i-cb">
+						<label for="i-cb">Integration</label>
+						<br>
+						<input type="checkbox" class="calc-sub" id="mvc-cb">
+						<label for="mvc-cb">Multivariable Calculus</label>
+						<br>
+						<input type="checkbox" class="calc-sub" id="de-cb">
+						<label for="de-cb">Differential Equations</label>
+					</div>
+					<div class="sub collapse math-collapse"> <!-- child -->
+						<input type="checkbox" id="logic-cb">
+						<label data-bs-toggle="collapse" data-bs-target="#logic-sub" aria-expanded="false">Logic</label>
+					</div> 
+					<div class="sub-sub collapse math-collapse" id="logic-sub"> <!-- child-child -->
+						<input type="checkbox" class="logic-sub" id="st-cb">
+						<label for="st-cb">Set Theory</label>
+						<br>
+						<input type="checkbox" class="logic-sub" id="mt-cb">
+						<label for="mt-cb">Model Theory</label>
+						<br>
+						<input type="checkbox" class="logic-sub" id="pt-cb">
+						<label for="pt-cb">Proof Theory</label>
+					</div>
+					<label data-bs-toggle="collapse" data-bs-target=".chem-collapse" aria-expanded="false">🔬 Chemistry</label>
+					<div class="sub collapse chem-collapse"> <!-- child -->
+						<input type="checkbox" id="ochem-cb">
+						<label data-bs-toggle="collapse" data-bs-target="#ochem-sub" aria-expanded="false">Organic Chemistry</label>
+					</div>
+					<div class="sub-sub collapse chem-collapse" id="ochem-sub"> <!-- child-child -->
+						<input type="checkbox" class="ochem-sub" id="rm-cb">
+						<label for="rm-cb">Reaction Mechanisms</label>
+						<br>
+						<input type="checkbox" class="ochem-sub" id="nom-cb">
+						<label for="nom-cb">Ochem Nomenclature</label>
+						<br>
+						<input type="checkbox" class="ochem-sub" id="iso-cb">
+						<label for="iso-cb">Isomerism</label>
+					</div>
+					<div class="sub collapse chem-collapse"> <!-- child -->
+						<input type="checkbox" id="cchem-cb">
+						<label data-bs-toggle="collapse" data-bs-target="#cchem-sub" aria-expanded="false">Computational Chemistry</label>
+					</div>
+					<div class="sub-sub collapse chem-collapse" id="cchem-sub"> <!-- child-child -->
+						<input type="checkbox" class="cchem-sub" id="mm-cb">
+						<label for="mm-cb">Molecular Modeling</label>
+						<br>
+						<input type="checkbox" class="cchem-sub" id="qchem-cb">
+						<label for="qchem-cb">Quantum Chemistry</label>
+					</div>
+					<div class="sub collapse chem-collapse"> <!-- child -->
+						<input type="checkbox" id="biochem-cb">
+						<label data-bs-toggle="collapse" data-bs-target="#biochem-sub" aria-expanded="false">Biochem</label>
+					</div>
+					<div class="sub-sub collapse chem-collapse" id="biochem-sub"> <!-- child-child -->
+						<input type="checkbox" class="biochem-sub" id="ek-cb">
+						<label for="ek-cb">Enzyme Kinetics</label>
+						<br>
+						<input type="checkbox" class="biochem-sub" id="be-cb">
+						<label for="be-cb">Bioenergetics</label>
+						<br>
+						<input type="checkbox" class="biochem-sub" id="bg-cb">
+						<label for="bg-cb">Biochemical Genetics</label>
+					</div>
+					<label data-bs-toggle="collapse" data-bs-target=".phys-collapse" aria-expanded="false">🐈‍⬛ Physics</label>
+					<div class="sub collapse phys-collapse"> <!-- child -->
+						<input type="checkbox" id="qm-cb">
+						<label data-bs-toggle="collapse" data-bs-target="#qm-sub" aria-expanded="false">Quantum Mechanics</label>
+					</div>
+					<div class="sub-sub collapse phys-collapse" id="qm-sub"> <!-- child-child -->
+						<input type="checkbox" class="qm-sub" id="qchem2-cb">
+						<label for="qchem2-cb">Quantum Chemistry</label>
+						<br>
+						<input type="checkbox" class="qm-sub" id="se-cb">
+						<label for="se-cb">Schrödinger Equation</label>
+						<br>
+						<input type="checkbox" class="qm-sub" id="qwf-cb">
+						<label for="qwf-cb">Quantum Wavefunctions</label>
+						<br>
+					</div>
+					<div class="sub collapse phys-collapse"> <!-- child -->
+						<input type="checkbox" id="ap-cb">
+						<label data-bs-toggle="collapse" data-bs-target="#ap-sub" aria-expanded="false">Astrophysics</label>
+					</div>
+					<div class="sub-sub collapse phys-collapse" id="ap-sub"> <!-- child-child -->
+						<input type="checkbox" class="ap-sub" id="sa-cb">
+						<label for="sa-cb">Stellar AP</label>
+						<br>
+						<input type="checkbox" class="ap-sub" id="cos-cb">
+						<label for="cos-cb">Cosmology</label>
+					</div>
+					<label data-bs-toggle="collapse" data-bs-target=".bio-collapse" aria-expanded="false">👩‍🔬 Biology</label>
+					<div class="sub collapse bio-collapse"> <!-- child -->
+						<input type="checkbox" id="nsci-cb">
+						<label data-bs-toggle="collapse" data-bs-target="#nsci-sub" aria-expanded="false">Neuroscience</label>
+					</div>
+					<div class="sub-sub collapse bio-collapse" id="nsci-sub"> <!-- child-child -->
+						<input type="checkbox" class="nsci-sub" id="nphys-cb">
+						<label for="nphys-cb">Neurophysiology</label>
+						<br>
+						<input type="checkbox" class="nsci-sub" id="cns-cb">
+						<label for="cns-cb">Computational Neuroscience</label>
+					</div>
+					<div class="sub collapse bio-collapse"> <!-- child -->
+						<input type="checkbox" id="imm-cb">
+						<label data-bs-toggle="collapse" data-bs-target="#imm-sub" aria-expanded="false">Immunology</label>
+					</div>
+					<div class="sub-sub collapse bio-collapse" id="imm-sub"> <!-- child-child -->
+						<input type="checkbox" class="imm-sub" id="mhc-cb">
+						<label for="mhc-cb">MHC</label>
+						<br>
+						<input type="checkbox" class="imm-sub" id="hyp-cb">
+						<label for="hyp-cb">Hypersensitivity</label>
+						<br>
+						<input type="checkbox" class="imm-sub" id="lym-cb">
+						<label for="lym-cb">Lymphocytes</label>
+					</div>
+					<div class="sub collapse bio-collapse"> <!-- child -->
+						<input type="checkbox" id="biochem2-cb">
+						<label data-bs-toggle="collapse" data-bs-target="#biochem2-sub" aria-expanded="false">Biochem</label>
+					</div>
+					<div class="sub-sub collapse bio-collapse" id="biochem2-sub"> <!-- child-child -->
+						<input type="checkbox" class="biochem2-sub" id="ek2-cb">
+						<label for="ek2-cb">Enzyme Kinetics</label>
+						<br>
+						<input type="checkbox" class="biochem2-sub" id="be2-cb">
+						<label for="be2-cb">Bioenergetics</label>
+						<br>
+						<input type="checkbox" class="biochem2-sub" id="bg2-cb">
+						<label for="bg2-cb">Biochemical Genetics</label>
+					</div>
+					<div class="sub collapse bio-collapse"> <!-- child -->
+						<input type="checkbox" id="compbio-cb">
+						<label data-bs-toggle="collapse" data-bs-target="#compbio-sub" aria-expanded="false">Computational Biology</label>
+					</div>
+					<div class="sub-sub collapse bio-collapse" id="compbio-sub"> <!-- child-child -->
+						<input type="checkbox" class="compbio-sub" id="bioinfo-cb">
+						<label for="bioinfo-cb">Bioinformatics</label>
+						<br>
+						<input type="checkbox" class="compbio-sub" id="gea-cb">
+						<label for="gea-cb">Gene Expression Analysis</label>
+						<br>
+						<input type="checkbox" class="compbio-sub" id="phylo-cb">
+						<label for="phylo-cb">Phylogenetics</label>
+					</div>
+        		</ul>
+    		</div>
+		</div>
+
+
+
+		<div id="title-container">
+			<div id="title-sub-container">
+				<nav class="navbar">
+					<button class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" id="side-nav-btn">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+				</nav>
+				<h1>Learning Resources</h1>
+				<div class="d-none d-lg-flex" id="numSourcesContainer"><div id="numSources">Number of Sources: 0</div></div>
+				<div class="d-flex d-lg-none"></div>
+			</div>
+		</div>
+
+
+
+		<div id="body-container">
+			<div class="col-10">
+				<p id="table-reminder">This page provides great introductory resources to those who want to explore beyond the traditional high school curriculum but aren't 100% sure what to look for. While there are better ways to learn the ins and outs of certain concepts, you can use these tools to gain a solid foundation and a genuine interest in an advanced STEM subject before commiting too early. Use the filters on the side to start searching!</p>
+				<table class="table table-hover" id="table-lr">
+					<!-- cs ml -->
+					<tr>
+						<td class="usl sl bioinfo gea phylo cns mm qchem">
+							<h4><a href="https://www.edx.org/course/machine-learning-with-python-a-practical-introduct" target="_blank">edX - Machine Learning with Python: A Practical Introduction</a></h4>
+							<p>
+								The course "Machine Learning with Python: A Practical Introduction" offered by IBM on edX provides students with a practical and comprehensive introduction to machine learning using the Python programming language. Through hands-on exercises and real-world examples, students will learn the fundamentals of machine learning algorithms, data preprocessing, and model evaluation. This course is an ideal resource for students interested in gaining a solid foundation in machine learning and its applications in various fields.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="mll sdl bioinfo gea phylo cns mm qchem">
+							<h4><a href="https://www.youtube.com/watch?v=kqtD5dpn9C8&ab_channel=ProgrammingwithMosh" target="_blank">YouTube - Python for Beginners - Learn Python in 1 Hour</a></h4>
+							<p>
+								In this beginner-friendly tutorial, Programming with Mosh offers a concise and effective approach to learn Python from scratch in just one hour. The video covers fundamental Python concepts, including variables, data types, conditional statements, loops, functions, and more. With Mosh's clear explanations and hands-on examples, beginners can quickly grasp the basics of Python programming, making it an ideal resource for those looking to kickstart their journey into the world of Python development.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="mll sdl bioinfo gea phylo cns mm qchem">
+							<h4><a href="https://www.youtube.com/watch?v=azcrPFhaY9k&ab_channel=CodingTech" target="_blank">YouTube - How To Think Like A Programmer</a></h4>
+							<p>
+								The YouTube video "How To Think Like A Programmer" is a great introductory video for those who are looking to become proficient programmers. This personally helped me while I was learning to code, as switching to the programming mindset is very difficult. While the lecturer's voice is rather annoying, for lack of a better word, he is a great teacher and will help you immensely no matter which programming language you decide to pick up. Turn your volume down before watching.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="mll">
+							<h4><a href="https://www.youtube.com/watch?v=GB9ByFAIAH4&ab_channel=KeithGalli" target="_blank">YouTube - Complete Python NumPy Tutorial (Creating Arrays, Indexing, Math, Statistics, Reshaping)</a></h4>
+							<p>
+								In the "Complete Python NumPy Tutorial (Creating Arrays, Indexing, Math, Statistics, Reshaping)" video tutorial, you'll be taken on a comprehensive journey through the NumPy library in Python. NumPy is a powerful library for numerical computations and scientific computing. This tutorial covers various topics, including creating arrays, indexing and slicing arrays, performing mathematical operations on arrays, calculating statistics, and reshaping arrays. With this tutorial, you'll gain a strong understanding of NumPy's capabilities, making it easier for you to handle complex data and perform advanced computations efficiently in Python.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="mll">
+							<h4><a href="https://www.youtube.com/watch?v=0B5eIE_1vpU&ab_channel=freeCodeCamp.org" target="_blank">YouTube - Scikit-learn Crash Course - Machine Learning Library for Python</a></h4>
+							<p>
+								In the "Scikit-learn Crash Course - Machine Learning Library for Python" video, you'll receive a fast-paced and practical introduction to Scikit-learn, one of the most popular and powerful machine learning libraries in Python. This crash course will cover the essential concepts of Scikit-learn, including data preprocessing, model training, evaluation, and prediction. By the end of the tutorial, you'll have a solid foundation in using Scikit-learn to implement various machine learning algorithms, making it easier for you to start building your own machine learning models and solving real-world problems with Python.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="mll">
+							<h4><a href="https://www.youtube.com/watch?v=vmEHCJofslg&ab_channel=KeithGalli" target="_blank">YouTube - Complete Python Pandas Data Science Tutorial! (Reading CSV/Excel files, Sorting, Filtering, Groupby)</a></h4>
+							<p>
+								In the "Complete Python Pandas Data Science Tutorial!" video, you'll embark on a comprehensive journey through the Pandas library in Python, which is a powerful tool for data manipulation and analysis. This tutorial covers various essential topics, including reading CSV and Excel files, sorting data, filtering data based on specific conditions, and using the groupby function for data aggregation and analysis. By following this tutorial, you'll gain a deep understanding of Pandas' capabilities, making it easier for you to efficiently handle and analyze large datasets, perform data cleaning, and derive valuable insights for your data science projects using Python.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="ann nphys">
+							<h4><a href="https://open.spotify.com/episode/5dGfbT0dtX7gxeZjgXnRbc?si=3289aad89f234329" target="_blank">Spotify Podcast - Understanding Neural Networks</a></h4>
+							<p>
+								Data Skeptic's "Understanding Neural Networks" podcast episode offers a comprehensive introduction to the fascinating world of neural networks. In this engaging episode, the host delves into the fundamental concepts and principles behind neural networks, demystifying this complex topic for beginners. From the basic structure and functioning of neural networks to their applications in machine learning and artificial intelligence, this episode provides a solid foundation for anyone seeking to grasp the essentials of this cutting-edge technology.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="usl gea">
+							<h4><a href="https://www.youtube.com/watch?v=JnnaDNNb380&ab_channel=CrashCourse" target="_blank">YouTube - Unsupervised Learning: Crash Course AI #6</a></h4>
+							<p>
+								"Unsupervised Learning: Crash Course AI #6" is an insightful and engaging video from the Crash Course AI series. This episode explores the fascinating world of unsupervised learning, a crucial concept in artificial intelligence. Through clear explanations and dynamic visuals, the video breaks down the key principles and techniques of unsupervised learning, shedding light on how machines can learn patterns and gain insights from unlabeled data.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="sl">
+							<h4><a href="https://www.youtube.com/watch?v=4qVRBYAdLAo&ab_channel=CrashCourse" target="_blank">YouTube - Supervised Learning: Crash Course AI #2</a></h4>
+							<p>
+								"Supervised Learning: Crash Course AI #2" is an informative and engaging video from the Crash Course AI series. In this episode, the video dives into the concept of supervised learning, a fundamental technique in artificial intelligence. With clear explanations and relatable examples, the video breaks down the process of supervised learning, where machines are trained using labeled data to make predictions and classifications. Viewers will gain a solid understanding of how algorithms and models are trained, evaluated, and applied in various real-world scenarios.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="ann">
+							<h4><a href="https://www.youtube.com/watch?v=-4Oso9-9KTQ&ab_channel=KyleHill" target="_blank">YouTube - ChatGPT Explained Completely: Neural Networks and Natural Language Processing</a></h4>
+							<p>
+								"ChatGPT Explained Completely: Neural Networks and Natural Language Processing" is an in-depth and comprehensive video that delves into the workings of ChatGPT, neural networks, and natural language processing (NLP). Presented by Kyle Hill, this video provides a thorough explanation of how ChatGPT utilizes neural networks to process and generate human-like text responses. The video covers key concepts such as attention mechanisms, transformer architecture, and the training process involved in creating a language model like ChatGPT.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="ann">
+							<h4><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9318195" target="_blank">Research Paper - Effects of Hidden Layers on the Efficiency of Neural networks</a></h4>
+							<p>
+								The research paper titled "Effects of Hidden Layers on the Efficiency of Neural Networks" investigates the impact of hidden layers on the performance and efficiency of neural networks, particularly in complex problem domains where accuracy and time complexity are crucial factors. The study reviews different approaches and concludes that utilizing three hidden layers tends to offer optimal results in terms of reducing time complexity while maintaining satisfactory accuracy. The paper highlights that architectures with fewer than three hidden layers often experience accuracy loss, while architectures with more than three hidden layers tend to exhibit suboptimal time complexity.
+							</p>
+						</td>
+					</tr>
+					<!-- cs sd -->
+					<tr>
+						<td class="sdl">
+							<h4><a href="https://www.w3schools.com/html/default.asp" target="_blank">W3Schools - HTML Tutorial</a></h4>
+							<p>
+								W3Schools' HTML tutorial is a comprehensive resource for beginners and intermediate learners seeking to develop their skills in HTML (Hypertext Markup Language). This tutorial offers a step-by-step approach to understanding the fundamentals of HTML, covering topics such as tags, elements, attributes, text formatting, links, images, tables, forms, and more. With its interactive examples and clear explanations, W3Schools provides an accessible learning experience, allowing users to practice and apply their knowledge in real-time.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="sdl">
+							<h4><a href="https://www.w3schools.com/css/default.asp" target="_blank">W3Schools - CSS Tutorial</a></h4>
+							<p>
+								W3Schools' CSS tutorial is a comprehensive and user-friendly resource for individuals looking to enhance their understanding and skills in CSS (Cascading Style Sheets). This tutorial provides a systematic and hands-on approach to learning CSS, covering various aspects such as selectors, styling text, working with colors, layouts, responsive design, animations, and more. With its interactive code examples and clear explanations, W3Schools enables users to grasp CSS concepts and apply them to create visually appealing and responsive web designs.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="sdl">
+							<h4><a href="https://www.youtube.com/watch?v=W6NZfCO5SIk&ab_channel=ProgrammingwithMosh" target="_blank">YouTube - JavaScript Tutorial for Beginners: Learn JavaScript in 1 Hour</a></h4>
+							<p>
+								The "JavaScript Tutorial for Beginners: Learn JavaScript in 1 Hour" is an excellent video tutorial presented by Programming with Mosh. Designed for beginners, this tutorial provides a condensed yet comprehensive introduction to JavaScript, a widely used programming language for web development. In just one hour, viewers are guided through the core concepts of JavaScript, including variables, data types, functions, control flow, arrays, objects, and more. Through clear explanations and practical examples, Mosh breaks down complex concepts into digestible bits, allowing learners to quickly grasp the essentials of JavaScript programming.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="sdl">
+							<h4><a href="https://www.youtube.com/watch?v=-qfEOE4vtxE&ab_channel=freeCodeCamp.org" target="_blank">YouTube - Bootstrap CSS Framework - Full Course for Beginners</a></h4>
+							<p>
+								The "Bootstrap CSS Framework - Full Course for Beginners" video is a comprehensive tutorial presented by freeCodeCamp.org. This tutorial is specifically designed for beginners who want to learn the Bootstrap CSS framework, a popular tool for building responsive and visually appealing websites. The video covers various topics including setting up Bootstrap, understanding the grid system, working with navigation bars, buttons, forms, carousels, and more. With clear explanations and practical examples, freeCodeCamp.org provides a step-by-step walkthrough of using Bootstrap to create modern and responsive web designs.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="sdl cw">
+							<h4><a href="https://www.coursera.org/learn/introduction-to-software-engineering?specialization=ibm-backend-development&utm_medium=sem&utm_source=gg&utm_campaign=B2C_NAMER_ibm-backend-development_ibm_FTCOF_professional-certificates_country-US-country-CA&campaignid=19973760166&adgroupid=146696810063&device=c&keyword=&matchtype=&network=g&devicemodel=&adposition=&creativeid=654839099242&hide_mobile_promo&gclid=Cj0KCQjw756lBhDMARIsAEI0AgnnkM-RyUdvNvKJmd8hxDC_1QA-j278cmWt9xtV7KiCu2kMedEaCakaAhC9EALw_wcB" target="_blank">Coursera - Introduction to Software Engineering</a></h4>
+							<p>
+								"Introduction to Software Engineering" is a comprehensive online course available on Coursera. This course provides a solid foundation in software engineering principles and practices. Through a combination of video lectures, hands-on exercises, and quizzes, learners gain an understanding of the software development lifecycle, requirements engineering, software design, testing, and project management. The course emphasizes industry best practices and real-world examples, allowing participants to apply their knowledge to practical scenarios. 
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="sdl cw">
+							<h4><a href="https://www.youtube.com/playlist?list=PLoYCgNOIyGAB_8_iq1cL8MVeun7cB6eNc" target="_blank">YouTube Playlist - Web Development Tutorials For Beginners</a></h4>
+							<p>
+								The "Web Development Tutorials For Beginners" playlist on YouTube offers a comprehensive collection of tutorials designed to help individuals learn web development from scratch. This playlist covers various technologies and concepts essential for web development, including HTML, CSS, JavaScript, and more. Each tutorial provides an overview of the technology, explains its key concepts, and demonstrates how to apply them in practice to build websites.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="sdl ca">
+							<h4><a href="https://www.edx.org/course/cs50s-mobile-app-development-with-react-native?index=product&queryID=f8010007beb9fef3eb39efd22e12a85a&position=1&results_level=first-level-results&term=app+development&objectID=course-98955fca-5874-45a9-b2d5-278e6694c6ed&campaign=CS50%27s+Mobile+App+Development+with+React+Native&source=edX&product_category=course&placement_url=https%3A%2F%2Fwww.edx.org%2Fsearch" target="_blank">edX - CS50's Mobile App Development with React Native</a></h4>
+							<p>
+								"CS50's Mobile App Development with React Native" is an extensive online course offered on edX. This course, developed by CS50, introduces learners to mobile app development using React Native. Participants will gain hands-on experience in building cross-platform mobile applications using JavaScript and React Native framework. The course covers key topics such as UI design, user input, data management, and device integration. Through interactive lectures, coding exercises, and projects, learners will develop a strong foundation in mobile app development principles and techniques.
+							</p>
+						</td>
+					</tr>
+					<!-- cs id -->
+					<tr>
+						<td class="ux">
+							<h4><a href="https://www.coursera.org/learn/foundations-user-experience-design?specialization=google-ux-design&utm_medium=sem&utm_source=gg&utm_campaign=B2C_NAMER_google-ux-design_google_FTCOF_professional-certificates_country-US&campaignid=12512630840&adgroupid=118346521919&device=c&keyword=how%20to%20ui%20ux&matchtype=b&network=g&devicemodel=&adposition=&creativeid=504987658726&hide_mobile_promo&gclid=Cj0KCQjw756lBhDMARIsAEI0Agkot0ZGzcQJri8aY78GG68Kfm60AGl7vh9jrBQG6Rca9dLpo9o3lrwaAn1uEALw_wcB" target="_blank">Coursera - Foundations of User Experience (UX) Design</a></h4>
+							<p>
+								Foundations of User Experience (UX) Design is the first of a series of seven courses that will equip you with the skills needed to apply to entry-level jobs in user experience design. UX designers focus on the interactions that people have with products like websites, mobile apps, and physical objects. UX designers make those everyday interactions usable, enjoyable, and accessible. The role of an entry-level UX designer might include empathizing with users, defining their pain points, coming up with ideas for design solutions, creating wireframes, prototypes, and mockups, and testing designs to get feedback.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="ui ux">
+							<h4><a href="https://www.youtube.com/watch?v=fdXI9yznzz8&ab_channel=TEDxTalks" target="_blank">YouTube - Psychology Behind UI/UX Design | Harrish Murugesan | TEDxUTA</a></h4>
+							<p>
+								In the TEDxUTA talk titled "Psychology Behind UI/UX Design," Harrish Murugesan delves into the fascinating connection between psychology and user interface/user experience (UI/UX) design. Murugesan explores how human cognition, perception, and behavior play a crucial role in designing effective and engaging digital interfaces. With insightful examples and case studies, he discusses concepts such as color psychology, visual hierarchy, information architecture, and the importance of empathy in UI/UX design. By understanding the psychological principles behind user behavior and preferences, designers can create interfaces that are intuitive, user-friendly, and aesthetically pleasing. This thought-provoking talk provides valuable insights for UI/UX designers, developers, and anyone interested in the intersection of psychology and design in the digital realm.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="ui ux">
+							<h4><a href="https://bootcamp.berkeley.edu/ux-ui/landing/?s=Google-Unbranded_ExternalState_&dki=Learn%20UX%20Design%20Online&pkw=ux%20design%20course&pcrid=468876544761&pmt=e&utm_source=google&utm_medium=cpc&utm_campaign=GGL%7CUC-BERKELEY%7CSEM%7CUX-UI%7C-%7COFL%7C_ExternalState_%7CALL%7CNBD-G%7CEXACT%7CPrimary%7CCourse&utm_term=ux%20design%20course&utm_content=468876544761&s=google&k=ux%20design%20course&gad=1&gclid=Cj0KCQjw756lBhDMARIsAEI0AgkSa3K9zL5Qd_OlOyptvjfyKEnTBHYY4iGZZZy801HfnWCYZD5AtrkaAj9vEALw_wcB&gclsrc=aw.ds" target="_blank">UC Berkeley Extension - Berkeley UX/UI Boot Camp</a></h4>
+							<p>
+								The Berkeley UX/UI Boot Camp is an intensive and dynamic program offered by UC Berkeley Extension. This boot camp provides a comprehensive learning experience for individuals seeking to enter or advance in the field of user experience and user interface design. Students will gain hands-on experience with industry-standard tools and techniques, including user research, wireframing, prototyping, visual design, and interaction design. Through a combination of expert instruction, real-world projects, and collaborative teamwork, participants will develop a professional portfolio to showcase their skills and knowledge to potential employers.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="ui ux">
+							<h4><a href="https://www.mygreatlearning.com/academy/learn-for-free/courses/introduction-to-design-thinking" target="_blank">Great Learning - Introduction to Design Thinking</a></h4>
+							<p>
+								The "Introduction to Design Thinking" course offered by Great Learning is a free online resource that provides an overview of the principles and methodologies of design thinking. This course introduces learners to the mindset and approach used by designers to solve complex problems and create innovative solutions. Participants will explore the various stages of the design thinking process, including empathy, problem definition, ideation, prototyping, and testing. Through interactive lessons, case studies, and practical exercises, learners will develop a foundational understanding of design thinking and its applications in various domains.
+							</p>
+						</td>
+					</tr>
+
+
+					<!-- math alg -->
+					<tr>
+						<td class="la">
+							<h4><a href="https://www.khanacademy.org/math/linear-algebra" target="_blank">Khan Academy - Linear Algebra</a></h4>
+							<p>
+								The Linear Algebra course on Khan Academy is a comprehensive online resource that covers fundamental concepts in linear algebra. Divided into multiple units, this course provides a thorough introduction to various topics, such as vectors and spaces, matrix transformations, and alternate coordinate systems. By engaging with this course, learners will develop a solid understanding of the fundamental concepts in linear algebra and acquire the necessary skills to explore further applications in this field.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="la">
+							<h4><a href="https://www.youtube.com/playlist?list=PLl-gb0E4MII03hiCrZa7YqxUMEeEPmZqK" target="_blank">YouTube Playlist - Linear Algebra (Entire Course)</a></h4>
+							<p>
+								The "Linear Algebra (Entire Course)" playlist on YouTube offers a comprehensive journey into the fascinating world of linear algebra. With a collection of informative videos, this playlist covers a wide range of topics, including vectors, matrices, systems of linear equations, determinants, eigenvalues, eigenvectors, vector spaces, and linear transformations. The videos provide clear explanations, examples, and demonstrations, making complex concepts more accessible to learners.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="aa">
+							<h4><a href="https://ocw.mit.edu/courses/18-703-modern-algebra-spring-2013/download/" target="_blank">MIT OCW - Modern Algebra</a></h4>
+							<p>
+								MIT's Modern Algebra course, available on MIT OpenCourseWare, provides a comprehensive exploration of modern algebraic structures and concepts. This course, originally taught during the spring of 2013, covers a wide range of topics in abstract algebra, including group theory, ring theory, and field theory. Through lecture notes, problem sets, and additional resources, learners have access to a wealth of materials to deepen their understanding of advanced algebraic concepts.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="aa">
+							<h4><a href="https://www.youtube.com/playlist?list=PLi01XoE8jYoi3SgnnGorR_XOW3IcK-TP6" target="_blank">YouTube Playlist - Abstract Algebra</a></h4>
+							<p>
+								The "Abstract Algebra" playlist on YouTube is a comprehensive collection of videos that delve into the fascinating subject of abstract algebra. This playlist covers various topics within abstract algebra, including group theory, ring theory, field theory, and more. The videos provide clear explanations, proofs, and examples to help learners grasp the abstract concepts and their applications.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="aa">
+							<h4><a href="https://www.youtube.com/watch?v=mH0oCDa74tE&ab_channel=3Blue1Brown" target="_blank">YouTube - Group theory, abstraction, and the 196,883-dimensional monster</a></h4>
+							<p>
+								In the captivating video titled "Group Theory, Abstraction, and the 196,883-Dimensional Monster" by 3Blue1Brown, viewers are taken on a journey into the fascinating realm of group theory. With his signature engaging and visual approach, the host explores the concept of symmetry, introducing the abstract idea of groups as a way to describe and analyze patterns. The video gradually builds an understanding of group theory, leading up to the discovery of the extraordinary "Monster" group, a 196,883-dimensional mathematical structure with profound implications. This thought-provoking video not only introduces the basics of group theory but also highlights its deep connections to other areas of mathematics and its implications in diverse fields.
+							</p>
+						</td>
+					</tr>
+					<!-- math calc -->
+					<tr>
+						<td class="i de">
+							<h4><a href="https://www.youtube.com/playlist?list=PL00CCm_434gHmObik13oqAUq0foEGOdIw" target="_blank">YouTube Playlist - Calculus BC [FULL COURSE]</a></h4>
+							<p>
+								The "Calculus BC [FULL COURSE]" playlist on YouTube offers a comprehensive collection of video lectures covering the topics typically covered in a Calculus BC course. This playlist is designed to provide a thorough understanding of advanced calculus concepts, including limits, derivatives, integrals, sequences, and series. The lectures provide clear explanations, step-by-step examples, and problem-solving techniques to help viewers grasp the material effectively.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="i">
+							<h4><a href="https://www.youtube.com/watch?v=6WUjbJEeJwM&ab_channel=TheOrganicChemistryTutor" target="_blank">YouTube - Calculus 1 - Integration & Antiderivatives</a></h4>
+							<p>
+								The YouTube video titled "Calculus 1 - Integration & Antiderivatives" by The Organic Chemistry Tutor provides a comprehensive lesson on integration and antiderivatives in calculus. In this video, the instructor covers essential topics such as the power rule, constant rule, sum and difference rules, and trigonometric integrals. Through step-by-step explanations and worked examples, viewers gain a solid understanding of how to find antiderivatives and evaluate definite and indefinite integrals. This video serves as a valuable resource for students studying calculus, particularly Calculus 1, or anyone looking to strengthen their knowledge and skills in integration and antiderivatives.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="i">
+							<h4><a href="https://www.youtube.com/watch?v=__Uw1SXPW7s&ab_channel=KhanAcademy" target="_blank">YouTube - Introduction to integral calculus | Accumulation and Riemann sums | AP Calculus AB | Khan Academy</a></h4>
+							<p>
+								The video "Introduction to Integral Calculus | Accumulation and Riemann Sums | AP Calculus AB" by Khan Academy serves as a comprehensive introduction to integral calculus. In this instructional video, Khan Academy covers essential concepts such as accumulation, Riemann sums, and the fundamental theorem of calculus. Through clear explanations and visual representations, learners gain a solid understanding of how integrals are used to calculate the accumulated change of a quantity over an interval. This video is particularly relevant for those studying AP Calculus AB or anyone interested in delving into the foundations of integral calculus.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="mvc">
+							<h4><a href="https://www.khanacademy.org/math/multivariable-calculus" target="_blank">Khan Academy - Multivariable calculus</a></h4>
+							<p>
+								Khan Academy's Multivariable Calculus course is a comprehensive online resource for learners seeking to delve into the realm of multivariable calculus. This course covers a wide range of topics, including vectors, vector-valued functions, partial derivatives, multiple integrals, and vector calculus. Through interactive lessons, practice exercises, and video explanations, Khan Academy provides a structured and engaging learning experience. This course is designed to deepen your understanding of calculus in multiple dimensions, preparing you for advanced topics in mathematics, physics, engineering, and other fields.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="mvc">
+							<h4><a href="https://www.youtube.com/watch?v=gsUgDpGWk-M&ab_channel=Dr.TreforBazett" target="_blank">YouTube - What are the big ideas of Multivariable Calculus?? Full Course Intro</a></h4>
+							<p>
+								In the enlightening video "What are the big ideas of Multivariable Calculus?? Full Course Intro" by Dr. Trefor Bazett, viewers are introduced to the key concepts and principles of multivariable calculus. This comprehensive video serves as an introductory guide to the major ideas in multivariable calculus, providing a foundation for deeper exploration. Dr. Trefor Bazett covers essential topics such as vectors, functions of several variables, partial derivatives, gradients, optimization, multiple integrals, line integrals, and surface integrals. Through clear explanations and visual representations, viewers gain an understanding of how multivariable calculus extends the principles of calculus to higher-dimensional spaces.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="mvc">
+							<h4><a href="https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/download/" target="_blank">MIT OCW - Multivariable Calculus</a></h4>
+							<p>
+								The MIT OpenCourseWare (OCW) course on Multivariable Calculus from the Fall of 2010, available at the provided link, offers a comprehensive resource for individuals looking to explore advanced STEM concepts. This course provides introductory materials for multivariable calculus, covering topics such as vector calculus, partial derivatives, multiple integration, and vector fields. With lecture notes, problem sets, and video lectures, this OCW course presents a valuable opportunity for self-study or as a supplementary resource for formal education in mathematics or STEM-related fields.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="de">
+							<h4><a href="https://www.khanacademy.org/math/differential-equations" target="_blank">Khan Academy - Differential Equations</a></h4>
+							<p>
+								The Khan Academy's "Differential Equations" section is a valuable resource for individuals seeking an introduction to this advanced STEM concept. With a comprehensive collection of video lessons and practice exercises, Khan Academy provides a user-friendly platform to learn about differential equations. From basic concepts like first-order equations to more advanced topics like Laplace transforms and systems of differential equations, the resources offered cover a wide range of material.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="de">
+							<h4><a href="https://www.youtube.com/watch?v=C7nuJcJriWM&ab_channel=TheOrganicChemistryTutor" target="_blank">YouTube - Separable First Order Differential Equations - Basic Introduction</a></h4>
+							<p>
+								In the video titled "Separable First Order Differential Equations - Basic Introduction" by The Organic Chemistry Tutor, viewers are introduced to the concept of separable first-order differential equations. This video provides a clear and concise explanation of how to solve separable differential equations, which can be expressed in the form of a separable function of the dependent and independent variables. The video covers the step-by-step process of separating the variables, integrating each side, and finding the general solution.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="de">
+							<h4><a href="https://www.youtube.com/watch?v=ZEJVyybsiT4&ab_channel=TheOrganicChemistryTutor" target="_blank">YouTube - Homogeneous Differential Equations</a></h4>
+							<p>
+								In the video titled "Homogeneous Differential Equations" by The Organic Chemistry Tutor, viewers are introduced to the concept of homogeneous differential equations. This video provides a clear and concise explanation of how to recognize and solve homogeneous differential equations, which are differential equations that can be expressed in a homogeneous form. The video covers the step-by-step process of applying a substitution technique to simplify the equation, leading to a separable differential equation that can be solved using integration.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="de">
+							<h4><a href="https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/download/" target="_blank">MIT OCW - Differential Equations</a></h4>
+							<p>
+								The MIT OpenCourseWare (OCW) course on Differential Equations from the Fall of 2011, available at the provided link, offers a comprehensive resource for individuals interested in studying this advanced STEM concept. This course covers a wide range of topics, including first-order differential equations, second-order linear equations, Laplace transforms, systems of differential equations, and more. Through lecture notes, problem sets, and video lectures, the course provides a rigorous and in-depth exploration of differential equations. This OCW course serves as an excellent resource for self-study or as a supplementary material for formal education in mathematics or STEM-related fields.
+							</p>
+						</td>
+					</tr>
+					<!-- math logic -->
+					<tr>
+						<td class="st">
+							<h4><a href="https://www.youtube.com/watch?v=5ZhNmKb-dqk&ab_channel=Dr.WillWood" target="_blank">YouTube - Set Theory | All-in-One Video</a></h4>
+							<p>
+								In the YouTube video "Set Theory | All-in-One Video" by Dr. Will Wood, viewers are presented with a comprehensive overview of set theory. This resource serves as a valuable introduction to the fundamental concepts and principles of sets. Dr. Will Wood explains key concepts such as elements, subsets, unions, intersections, and complements, providing clear explanations and visual examples to enhance understanding.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="st">
+							<h4><a href="https://plato.stanford.edu/entries/set-theory/basic-set-theory.html" target="_blank">Stanford Encyclopedia of Philosophy - Basic Set Theory</a></h4>
+							<p>
+								The provided link directs to the Stanford Encyclopedia of Philosophy's entry on "Basic Set Theory." This comprehensive resource offers an in-depth exploration of the foundational concepts and principles of set theory. The article provides a clear and rigorous introduction to the fundamental notions of sets, including membership, intersection, union, power set, and more. It delves into topics such as Russell's paradox, the Axiom of Choice, and different set-theoretic systems.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="mt">
+							<h4><a href="https://plato.stanford.edu/entries/model-theory/" target="_blank">Stanford Encyclopedia of Philosophy - Model Theory</a></h4>
+							<p>
+								The provided link leads to the Stanford Encyclopedia of Philosophy's entry on "Model Theory." This extensive resource offers a comprehensive exploration of the field of model theory, which investigates mathematical structures and their interpretations. The article covers various aspects of model theory, including formal languages, theories, structures, interpretations, and the notion of satisfaction. It discusses fundamental concepts such as elementary equivalence, completeness, compactness, and categoricity. The entry provides historical context, highlights important developments, and delves into advanced topics, making it an invaluable reference for students, researchers, and anyone interested in the foundations of mathematical logic and the study of mathematical structures.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="mt">
+							<h4><a href="https://www.youtube.com/watch?v=ZS8PfP_JCdA&ab_channel=ThomasKern" target="_blank">YouTube - Introducing Model Theory with Ehrenfeucht-Fraïssé Games on Linear Orderings #SOME2</a></h4>
+							<p>
+								In the YouTube video "Introducing Model Theory with Ehrenfeucht-Fraïssé Games on Linear Orderings" by Thomas Kern, viewers are introduced to the fascinating field of model theory using Ehrenfeucht-Fraïssé games as a tool for understanding linear orderings. This video serves as an accessible introduction to model theory, a branch of mathematical logic that explores the relationships between formal languages and mathematical structures. Thomas Kern explains the basic concepts of model theory, such as structures, languages, and interpretations, and demonstrates how Ehrenfeucht-Fraïssé games can be used to analyze and compare linear orderings.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="mt">
+							<h4><a href="https://people.math.sc.edu/mcnulty/modeltheory/fall2011.pdf" target="_blank">Course Notes - Elementary Model Theory</a></h4>
+							<p>
+								The provided link directs to a PDF document for a course on model theory from Fall 2011 at the University of South Carolina. This resource offers a comprehensive overview of model theory, a branch of mathematical logic. The document covers various topics, including formal languages, structures, theories, and model-theoretic concepts such as interpretations, elementary equivalence, and compactness. It also explores more advanced topics such as types, saturated models, and the downward Löwenheim-Skolem theorem. This PDF serves as a valuable resource for students interested in delving into the intricacies of model theory.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="pt">
+							<h4><a href="https://www.youtube.com/playlist?list=PLt7hcIEdZLAlY0oUz4VCQnF14C6VPtewG" target="_blank">YouTube Playlist - 2015 Basic Proof Theory — Frank Pfenning (OPLSS 2015)</a></h4>
+							<p>
+								The "2015 Basic Proof Theory" playlist on YouTube features a series of lectures by Frank Pfenning from the Oregon Programming Languages Summer School (OPLSS) in 2015. These lectures provide an introduction to the field of proof theory, focusing on the basics of formal logic and the principles of proof construction. The playlist covers topics such as natural deduction, proof systems, soundness and completeness, and proof normalization. Through clear explanations and examples, Frank Pfenning introduces viewers to the fundamental concepts and techniques used in proof theory.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="pt">
+							<h4><a href="https://plato.stanford.edu/entries/proof-theory/" target="_blank">Stanford Encyclopedia of Philosophy - Proof Theory</a></h4>
+							<p>
+								The provided link directs to the Stanford Encyclopedia of Philosophy's entry on "Proof Theory." This comprehensive resource offers an in-depth exploration of proof theory, a branch of mathematical logic that focuses on studying the structure and properties of formal proofs. The article covers various aspects of proof theory, including formal systems, proof calculi, deductive systems, and the relationships between syntax and semantics. It discusses foundational concepts such as axioms, rules of inference, and the notion of provability. The entry also provides historical context, highlights important developments, and explores advanced topics, making it an invaluable reference for students, researchers, and anyone interested in the foundations of logic and mathematics.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="pt">
+							<h4><a href="https://mathweb.ucsd.edu/~sbuss/ResearchWeb/handbookI/ChapterI.pdf" target="_blank">Course Notes - An Introduction to Proof Theory</a></h4>
+							<p>
+								The provided chapter titled "An Introduction to Proof Theory" is an overview of proof theory, covering various aspects of propositional logic, first-order logic, and other logics. It introduces proof systems such as Frege proof systems, propositional sequent calculus, Hilbert-style proof systems, and the first-order sequent calculus. Additionally, it explores topics like resolution refutations, cut elimination, Herbrand's theorem, interpolation, and definability theorems. The chapter also touches on other logics, including intuitionistic logic and linear logic.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="pt">
+							<h4><a href="https://www.youtube.com/watch?v=fOGdb1CTu5c&ab_channel=WIRED" target="_blank">YouTube - Computer Scientist Explains One Concept in 5 Levels of Difficulty | WIRED</a></h4>
+							<p>
+								In WIRED's thought-provoking video, "Computer Scientist Explains One Concept in 5 Levels of Difficulty," embark on a journey through the concept of zero-knowledge proofs. Presented by a computer scientist, this video takes you on a progressively more challenging exploration of this fascinating cryptographic concept. Zero-knowledge proofs allow one party to prove knowledge of a fact to another party without revealing any additional information. Through clear explanations and engaging visuals, the video caters to a wide range of viewers, from beginners to those seeking a deeper understanding.
+							</p>
+						</td>
+					</tr>
+
+
+					<!-- chem ochem -->
+					<tr>
+						<td class="rm bg bg2 ek ek2 be be2">
+							<h4><a href="https://www.youtube.com/watch?v=ORMUTUhYjvg&ab_channel=CrashCourse" target="_blank">YouTube - Intro to Reaction Mechanisms: Crash Course Organic Chemistry #13</a></h4>
+							<p>
+								In the Crash Course Organic Chemistry video titled "Intro to Reaction Mechanisms" (#13), viewers are introduced to the fascinating world of reaction mechanisms. This video serves as an engaging resource for beginners looking to understand the basics of organic chemistry reaction mechanisms. The Crash Course host breaks down the concept, explaining key terms and providing examples to illustrate different types of reactions. By exploring concepts like bond breaking and formation, reaction intermediates, and reaction arrows, the video equips viewers with a foundation for understanding and predicting chemical reactions.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="rm bg bg2 ek ek2 be be2">
+							<h4><a href="https://www.youtube.com/watch?v=Efh5GkVbhEc&ab_channel=TheOrganicChemistryTutor" target="_blank">YouTube - Organic Chemistry - Reaction Mechanisms - Addition, Elimination, Substitution, & Rearrangement</a></h4>
+							<p>
+								In "Organic Chemistry - Reaction Mechanisms - Addition, Elimination, Substitution, & Rearrangement," The Organic Chemistry Tutor presents a comprehensive overview of reaction mechanisms in organic chemistry. This video explores the fundamental concepts of addition, elimination, substitution, and rearrangement reactions, which are crucial for understanding organic chemical transformations. Through clear explanations, examples, and visuals, The Organic Chemistry Tutor breaks down these reaction mechanisms, highlighting key factors and principles involved.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="rm">
+							<h4><a href="https://www.youtube.com/watch?v=69-FZDJ_eoI&ab_channel=CrashCourse" target="_blank">YouTube - Intro to Substitution Reactions: Crash Course Organic Chemistry #20</a></h4>
+							<p>
+								In the Crash Course Organic Chemistry video titled "Intro to Substitution Reactions" (#20), viewers dive into the world of substitution reactions. This engaging resource serves as an excellent introduction to understanding the basics of substitution reactions in organic chemistry. The Crash Course host explains the concept of substitution reactions, covering topics such as nucleophiles, electrophiles, leaving groups, and reaction mechanisms. Through clear explanations and relatable examples, viewers gain a solid foundation in comprehending and predicting substitution reactions.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="rm">
+							<h4><a href="https://www.youtube.com/watch?v=B494VE1IVfo&ab_channel=TheOrganicChemistryTutor" target="_blank">YouTube - Organic Chemistry Elimination Reactions - E1, E2, E1CB</a></h4>
+							<p>
+								In the YouTube video "Organic Chemistry Elimination Reactions - E1, E2, E1CB" by The Organic Chemistry Tutor, viewers are introduced to the world of elimination reactions in organic chemistry. This resource focuses on the E1, E2, and E1CB mechanisms, which are crucial for understanding the elimination process. The video provides clear explanations, examples, and step-by-step breakdowns of these reaction mechanisms. By exploring concepts such as the stability of carbocations, the role of bases, and the stereochemistry of the products, viewers gain a solid understanding of elimination reactions.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="rm">
+							<h4><a href="https://www.youtube.com/watch?v=yixbP3KPDtg&ab_channel=ProfessorDaveExplains" target="_blank">YouTube - Addition Reactions</a></h4>
+							<p>
+								In the YouTube video "Addition Reactions" by Professor Dave Explains, viewers are introduced to the concept of addition reactions in organic chemistry. This resource provides a comprehensive overview of addition reactions, which involve the addition of atoms or groups to unsaturated organic compounds. The video explores various types of addition reactions, including electrophilic addition, nucleophilic addition, and radical addition. Through clear explanations, examples, and visual aids, Professor Dave Explains breaks down the mechanisms and key concepts involved in addition reactions.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="nom">
+							<h4><a href="https://www.youtube.com/watch?v=TYU_JluleME&ab_channel=TheOrganicChemistryTutor" target="_blank">YouTube - IUPAC Nomenclature of Alkanes - Naming Organic Compounds</a></h4>
+							<p>
+								In the YouTube video "IUPAC Nomenclature of Alkanes - Naming Organic Compounds" by The Organic Chemistry Tutor, viewers are guided through the process of naming alkanes using the IUPAC nomenclature system. This resource serves as a comprehensive guide to understanding and applying the rules of naming organic compounds. The video covers topics such as identifying the longest carbon chain, naming substituents, and assigning locants.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="nom">
+							<h4><a href="https://www.youtube.com/watch?v=m9jM8lWxrAE&ab_channel=TheOrganicChemistryTutor" target="_blank">YouTube - Functional Groups</a></h4>
+							<p>
+								In the YouTube video "Functional Groups" by The Organic Chemistry Tutor, viewers are introduced to the concept of functional groups in organic chemistry. This resource provides a comprehensive overview of common functional groups and their properties. The video covers a wide range of functional groups, including alcohols, aldehydes, ketones, carboxylic acids, amines, and more. The Organic Chemistry Tutor explains the structural features and characteristics of each functional group, highlighting their reactivity and significance in organic chemistry reactions. Through clear explanations and visual examples, viewers gain a solid understanding of functional groups and their roles in determining the chemical properties and behavior of organic compounds.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="nom">
+							<h4><a href="https://www.angelo.edu/faculty/kboudrea/organic/IUPAC_Handout.pdf" target="_blank">IUPAC PDF - Short Summary of IUPAC Nomenclature of Organic Compounds</a></h4>
+							<p>
+								The provided link leads to a PDF document that provides a concise summary of the IUPAC nomenclature rules for organic compounds. The document offers a comprehensive overview of the guidelines established by the International Union of Pure and Applied Chemistry (IUPAC) for naming organic compounds systematically. It covers various aspects, including naming alkanes, alkenes, alkynes, cyclic compounds, substituents, functional groups, and more. The summary provides clear explanations, examples, and tables to aid in understanding and applying the IUPAC nomenclature rules accurately.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="iso bg bg2 ek ek2 be be2">
+							<h4><a href="https://www.khanacademy.org/science/biology/properties-of-carbon/hydrocarbon-structures-and-functional-groups/v/isomers" target="_blank">Khan Academy - Isomers</a></h4>
+							<p>
+								The provided link directs to a Khan Academy video that explains isomers, particularly focusing on hydrocarbon structures and functional groups. Isomers are molecules with the same molecular formula but different structural arrangements or spatial orientations. This resource explores the concept of isomerism, highlighting different types such as structural isomers, geometric isomers, and enantiomers. The video provides visual examples and explanations to help learners understand how the arrangement of atoms in a molecule can affect its properties and behaviors.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="iso bg bg2 ek ek2 be be2">
+							<h4><a href="https://www.youtube.com/watch?v=XftIUcLWTEE&ab_channel=TheOrganicChemistryTutor" target="_blank">YouTube - Stereoisomers, Enantiomers, Meso Compounds, Diastereomers, Constitutional Isomers, Cis & Trans</a></h4>
+							<p>
+								In the YouTube video "Stereoisomers, Enantiomers, Meso Compounds, Diastereomers, Constitutional Isomers, Cis & Trans" by The Organic Chemistry Tutor, viewers are introduced to the world of stereoisomers and the various types of isomerism. This resource provides a comprehensive overview of stereoisomerism, highlighting concepts such as enantiomers, meso compounds, diastereomers, constitutional isomers, and cis-trans isomerism. The video explains the structural differences that give rise to these different types of stereoisomers and explores their properties and relationships.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="iso bg bg2 ek ek2 be be2">
+							<h4><a href="https://www.youtube.com/watch?v=KztTL3FTcOw&ab_channel=TheOrganicChemistryTutor" target="_blank">YouTube - Chiral vs Achiral Molecules - Chirality Carbon Centers, Stereoisomers, Enantiomers, & Meso Compounds</a></h4>
+							<p>
+								In the YouTube video "Chiral vs Achiral Molecules - Chirality Carbon Centers, Stereoisomers, Enantiomers, & Meso Compounds" by The Organic Chemistry Tutor, viewers explore the concept of chirality and its implications in organic chemistry. This resource provides a comprehensive overview of chiral and achiral molecules, focusing on chirality carbon centers. The video explains the criteria for chirality and the difference between chiral and achiral molecules. It further explores the concepts of stereochemistry, enantiomers, and meso compounds, providing clear explanations and visual examples.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="iso bg bg2 ek ek2 be be2">
+							<h4><a href="https://www.youtube.com/watch?v=Bw_cetheReo&ab_channel=CrashCourse" target="_blank">YouTube - Stereochemistry: Crash Course Organic Chemistry #8</a></h4>
+							<p>
+								In the Crash Course Organic Chemistry video titled "Stereochemistry" (#8), viewers embark on a journey into the fascinating world of stereochemistry. This resource provides a comprehensive overview of stereochemistry, which explores the three-dimensional arrangement of atoms in molecules. The video covers key topics such as chiral and achiral molecules, enantiomers, optical activity, and the concept of chirality.
+							</p>
+						</td>
+					</tr>
+					<!-- chem cchem -->
+					<tr>
+						<td class="mm qchem">
+							<h4><a href="https://www.youtube.com/playlist?list=PLm8ZSArAXicIWTHEWgHG5mDr8YbrdcN1K" target="_blank">YouTube Playlist - Computational Chemistry</a></h4>
+							<p>
+								The provided YouTube playlist offers a collection of videos on "Computational Chemistry." This playlist serves as a valuable resource for individuals interested in exploring the field of computational chemistry, which combines principles of chemistry, physics, and computer science to study and simulate chemical systems. The playlist covers various topics, including molecular modeling, quantum mechanics calculations, molecular dynamics simulations, and drug discovery.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="mm qchem">
+							<h4><a href="https://www.youtube.com/watch?v=LPmMxYkLVko&ab_channel=TEDxTalks" target="_blank">YouTube - The Future of Medicine: Computational Chemistry | Sarah Su | TEDxLAHS</a></h4>
+							<p>
+								In the TEDx Talk titled "The Future of Medicine: Computational Chemistry" by Sarah Su, viewers are taken on a journey into the transformative potential of computational chemistry in the field of medicine. This captivating talk explores how computational methods can revolutionize drug discovery and development, personalized medicine, and the understanding of biological systems. Sarah Su highlights the power of computational chemistry to accelerate the identification and design of novel therapeutics, optimize drug properties, and predict drug-target interactions. By harnessing the computational tools and techniques discussed, the future of medicine can be reshaped, leading to more efficient, targeted, and personalized approaches to healthcare. This TEDx Talk provides an insightful glimpse into the exciting possibilities of computational chemistry in advancing medical research and treatment.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="mm">
+							<h4><a href="https://dasher.wustl.edu/chem478/lectures/lecture-11.pdf" target="_blank">PDF - Basics of Molecular Dynamics Simulation</a></h4>
+							<p>
+								In Lecture 11 & 12 of "Basics of Molecular Dynamics Simulation," explore the foundations of this powerful computational method. This engaging resource covers topics such as classical molecular dynamics, its significance in studying molecular systems, and the concept of phase space and time averages. Gain insights into the steps involved in performing a molecular dynamics simulation and understand the fundamental principles underlying this approach.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="mm">
+							<h4><a href="https://dasher.wustl.edu/chem478/lectures/lecture-01.pdf" target="_blank">PDF - Introduction to Molecular Modeling</a></h4>
+							<p>
+								The provided link leads to a PDF document titled "Introduction to Molecular Modeling." This resource serves as an introductory material for the topic of molecular modeling. The document covers fundamental concepts and techniques used in molecular modeling, including molecular mechanics, molecular dynamics, and quantum mechanics methods. It provides an overview of the importance of molecular modeling in various fields of chemistry, such as drug discovery, materials science, and biochemistry. The PDF includes lecture notes and visuals to aid in understanding the basics of molecular modeling.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="qchem qchem2">
+							<h4><a href="https://www.youtube.com/watch?v=HC81oYe43DI&ab_channel=TMPChem" target="_blank">YouTube - Quantum Chemistry 0.1 - Introduction</a></h4>
+							<p>
+								In the YouTube video "Quantum Chemistry 0.1 - Introduction" by TMP Chem, viewers are introduced to the fascinating field of quantum chemistry. This resource serves as a valuable introduction to the fundamental principles and concepts of quantum chemistry. The video covers topics such as the wave-particle duality of matter, the Schrödinger equation, quantum mechanics, and the electronic structure of atoms and molecules.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="qchem qchem2">
+							<h4><a href="http://www.chemistryexplained.com/Pr-Ro/Quantum-Chemistry.html" target="_blank">Chemistry Explained - Quantum Chemistry</a></h4>
+							<p>
+								The provided link directs to a web page titled "Quantum Chemistry" on the Chemistry Explained website. This resource offers a comprehensive exploration of quantum chemistry, a branch of chemistry that focuses on the application of quantum mechanics to understand the behavior of atoms and molecules. The web page covers various topics, including the principles of quantum mechanics, wave-particle duality, quantum numbers, atomic orbitals, and molecular orbitals. It discusses the key concepts and mathematical foundations of quantum chemistry, providing explanations and examples to aid in understanding.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="se qchem2 qwf">
+							<h4><a href="https://ocw.mit.edu/courses/5-73-introductory-quantum-mechanics-i-fall-2005/" target="_blank">MIT OCW - Introductory Quantum Mechanics I</a></h4>
+							<p>
+								The provided link leads to the MIT OpenCourseWare (OCW) course on "Introductory Quantum Mechanics I" from the Fall of 2005. This course offers a comprehensive resource for individuals interested in studying the fundamentals of quantum mechanics. The course covers a wide range of topics, including wave-particle duality, wavefunctions, operators, the time-independent Schrödinger equation, and quantum dynamics. Through lecture notes, problem sets, and additional resources, the course provides a rigorous and in-depth exploration of quantum mechanics.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="mm">
+							<h4><a href="https://www.gloriabazargan.com/blog/comp-chem-methods" target="_blank">Gloria Bazargan - An overview of computational methods for molecular modeling</a></h4>
+							<p>
+								Gloria Bazargan's blog post on computational chemistry methods offers an insightful resource for individuals seeking an introduction to advanced STEM concepts. The blog covers key topics such as molecular mechanics, molecular dynamics, first principles, and semi-empirical methods. Through Gloria Bazargan's explanations and insights, readers can gain a foundational understanding of these computational chemistry techniques.
+							</p>
+						</td>
+					</tr>
+					<!-- chem biochem -->
+					<tr>
+						<td class="ek be bg ek2 be2 bg2">
+							<h4><a href="https://www.edx.org/course/principles-of-biochemistry" target="_blank">edX - Principles of Biochemistry</a></h4>
+							<p>
+								The "Principles of Biochemistry" course offered on edX is a comprehensive resource for individuals interested in delving into the fundamentals of biochemistry. This course covers essential principles and concepts in biochemistry, providing a solid foundation for understanding the molecular processes and structures that underlie biological systems. Topics covered include protein structure and function, enzyme kinetics, metabolism, and nucleic acid biochemistry. Through interactive online modules, lectures, and assessments, learners can explore the intricacies of biochemistry at their own pace.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="ek ek2">
+							<h4><a href="https://www.youtube.com/watch?v=Cck3US2EBmU&ab_channel=QuickBiochemistryBasics" target="_blank">YouTube - Enzyme kinetics</a></h4>
+							<p>
+								In the YouTube video titled "Enzyme Kinetics" by Quick Biochemistry Basics, viewers are introduced to the fundamental principles of enzyme kinetics. This resource provides an overview of how enzymes catalyze biochemical reactions and the factors that influence their activity. The video covers concepts such as Michaelis-Menten kinetics, enzyme-substrate binding, and the measurement of enzyme activity.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="ek ek2">
+							<h4><a href="https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Map%3A_Physical_Chemistry_for_the_Biosciences_(Chang)/10%3A_Enzyme_Kinetics" target="_blank">LibreTexts - Enzyme Kinetics</a></h4>
+							<p>
+								Enzyme kinetics is a captivating topic in advanced STEM concepts. Dive into the realm of enzyme kinetics through the resource provided by Chang's "Physical Chemistry for the Biosciences" textbook. This comprehensive guide covers a range of topics, including the general principles of catalysis, the equations used to describe enzyme kinetics, and an intriguing case study on chymotrypsin. With clear explanations and illustrative examples, the resource facilitates a solid understanding of the principles and applications of enzyme kinetics.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="be be2">
+							<h4><a href="https://www.youtube.com/watch?v=QX6vKCWPqBM&ab_channel=Sportscicomm" target="_blank">YouTube - Bioenergetics</a></h4>
+							<p>
+								In the YouTube video "Bioenergetics" by Sportscicomm, viewers embark on an informative journey into the realm of bioenergetics. This resource provides an introduction to the fascinating field that explores the energy transformations and flow within living organisms. The video covers topics such as ATP, cellular respiration, metabolic pathways, and the role of enzymes in energy production.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="be be2">
+							<h4><a href="https://www.ncbi.nlm.nih.gov/books/NBK553175/#:~:text=Adenosine%20triphosphate%20(ATP)%20is%20the,three%20serially%20bonded%20phosphate%20groups." target="_blank">National Library of Medicine - Physiology, Adenosine Triphosphate</a></h4>
+							<p>
+								The provided link leads to a chapter on "Adenosine Triphosphate" in the NCBI Bookshelf. This resource explores the physiology and significance of adenosine triphosphate (ATP) in biological systems. The chapter covers various aspects of ATP, including its structure, synthesis, and role as a cellular energy currency. It explains how ATP is utilized in various physiological processes, such as muscle contraction, active transport, and signal transduction. The chapter also delves into the mechanisms of ATP hydrolysis and the interplay between ATP and other molecules involved in energy metabolism.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="be be2">
+							<h4><a href="https://www.youtube.com/watch?v=y3fyL3Zvn3U&ab_channel=TheOrganicChemistryTutor" target="_blank">YouTube - Electron Transport Chain - ATP Synthase, Chemiosmosis, & Oxidative Phosphorylation</a></h4>
+							<p>
+								In the YouTube video titled "Electron Transport Chain - ATP Synthase, Chemiosmosis, & Oxidative Phosphorylation" by The Organic Chemistry Tutor, viewers are taken on a journey through the intricate process of energy production in cells. This resource provides an in-depth explanation of the electron transport chain, ATP synthase, chemiosmosis, and oxidative phosphorylation. The video breaks down these complex concepts, illustrating how electron transfer and proton gradient contribute to ATP synthesis.
+							</p>
+						</td>
+					</tr>
+
+
+					<!-- phys qm -->
+					<tr>
+						<td class="qchem2 se qwf">
+							<h4><a href="https://www.edx.org/course/quantum-mechanics" target="_blank">edX - Quantum Mechanics</a></h4>
+							<p>
+								The "Quantum Mechanics" course offered on edX provides a comprehensive resource for individuals interested in diving into the fundamental principles of quantum mechanics. This course covers a wide range of topics, including wave-particle duality, wave functions, quantum superposition, and quantum measurement. Through video lectures, interactive exercises, and assessments, learners can explore the mathematical formalism and conceptual foundations of quantum mechanics. The course also delves into applications of quantum mechanics in various fields, such as atomic and molecular physics.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="se">
+							<h4><a href="https://www.youtube.com/watch?v=AR23uxZruhE&ab_channel=DomainofScience" target="_blank">YouTube - Can I Explain the Schrödinger Equation in 60 Seconds?</a></h4>
+							<p>
+								In the YouTube video "Can I Explain the Schrödinger Equation in 60 Seconds?" by Domain of Science, the host attempts to provide a brief explanation of the Schrödinger equation, a foundational equation in quantum mechanics. Within a concise timeframe, the video offers an intuitive analogy using waves to describe the behavior of particles in quantum mechanics. While the explanation is simplified, it serves as a helpful starting point for grasping the concept of the Schrödinger equation. However, it's important to note that quantum mechanics is a complex subject, and a comprehensive understanding requires further study and exploration.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="se">
+							<h4><a href="https://www.youtube.com/watch?v=QeUMFo8sODk&ab_channel=UpandAtom" target="_blank">YouTube - What is The Schrödinger Equation, Exactly?</a></h4>
+							<p>
+								The YouTube video titled "What is The Schrödinger Equation, Exactly?" by Up and Atom provides an in-depth explanation of the Schrödinger equation. The video explores the mathematical formulation of this fundamental equation in quantum mechanics. It discusses concepts such as wave functions, operators, and the time-dependent and time-independent versions of the Schrödinger equation. Through clear explanations and visual aids, Up and Atom demystifies the equation and its significance in describing the behavior of quantum systems.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="qwf">
+							<h4><a href="https://www.khanacademy.org/science/physics/quantum-physics/atoms-and-electrons/v/quantum-wavefunction" target="_blank">Khan Academy - Quantum Wavefunction</a></h4>
+							<p>
+								In the Khan Academy video titled "Quantum Wavefunction," viewers are introduced to the concept of wavefunctions in quantum physics. This resource provides an explanation of how wavefunctions describe the behavior of quantum particles, specifically focusing on electrons in atoms. The video covers topics such as probability density, wave-particle duality, and the Schrödinger equation.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="qwf">
+							<h4><a href="https://www.youtube.com/watch?v=Ei8CFin00PY&list=PLUl4u3cNGP61-9PEhRognw5vryrSEVLPr&index=3&ab_channel=MITOpenCourseWare" target="_blank">YouTube - Lecture 3: The Wave Function</a></h4>
+							<p>
+								In Lecture 3 of the MIT OpenCourseWare series on quantum mechanics, the focus is on "The Wave Function." This video lecture explores the fundamental concept of the wave function and its role in describing quantum systems. The lecture covers topics such as wave-particle duality, the probabilistic interpretation of the wave function, and the superposition principle. Through clear explanations and visual aids, the instructor guides learners through the mathematical and conceptual aspects of wave functions.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="se qwf">
+							<h4><a href="https://www.youtube.com/watch?v=w9Kyz5y_TPw&ab_channel=ParthG" target="_blank">YouTube - Wave Functions in Quantum Mechanics: The SIMPLE Explanation | Quantum Mechanics... But Quickly</a></h4>
+							<p>
+								In the YouTube video titled "Wave Functions in Quantum Mechanics: The SIMPLE Explanation" by Parth G, viewers are provided with a simplified explanation of wave functions in quantum mechanics. This resource aims to make the concept more accessible by breaking it down into simpler terms. The video introduces the idea of wave-particle duality and explores how wave functions represent the probabilities of finding a particle in different states. Through clear explanations, visual animations, and relatable examples, Parth G presents a straightforward explanation of wave functions without delving into complex mathematical details.
+							</p>
+						</td>
+					</tr>
+					<!-- phys ap -->
+					<tr>
+						<td class="cos">
+							<h4><a href="https://podcasts.ox.ac.uk/quantum-and-cosmos" target="_blank">Oxford - The Quantum and the Cosmos</a></h4>
+							<p>
+								"The Quantum and the Cosmos" is a captivating podcast series hosted by Oxford Physics Public Lectures. This series explores the intriguing intersection between quantum mechanics and cosmology, shedding light on the fundamental aspects of the universe. Through engaging discussions and presentations by leading physicists, listeners can delve into topics such as the quantum nature of black holes, the role of quantum physics in the early universe, and the interplay between quantum mechanics and the fabric of space-time.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="cos">
+							<h4><a href="https://www.youtube.com/watch?v=3FalDnjJISA&ab_channel=FrankWilczek" target="_blank">YouTube - Lecture 1: Dark Matter, The Problem</a></h4>
+							<p>
+								In Lecture 1 of the series "Dark Matter, The Problem" by Frank Wilczek, viewers are taken on an intriguing exploration of the enigma of dark matter. This lecture provides an in-depth analysis of the evidence for the existence of dark matter and its significance in understanding the structure and evolution of the universe. Frank Wilczek, a renowned physicist, offers clear explanations and thought-provoking insights into the mysteries surrounding dark matter.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="cos">
+							<h4><a href="https://www.youtube.com/watch?v=n4vvuzIWOTE&ab_channel=ProfessorDaveExplains" target="_blank">YouTube - Star and Galaxy Formation in the Early Universe</a></h4>
+							<p>
+								In the YouTube video titled "Star and Galaxy Formation in the Early Universe" by Professor Dave Explains, viewers are taken on a captivating journey into the process of star and galaxy formation in the early universe. This resource explores the fundamental mechanisms and conditions that led to the birth of stars and the formation of galaxies. The video covers topics such as gravitational collapse, protostellar evolution, and the role of dark matter in shaping the cosmic structures we observe today.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="cos">
+							<h4><a href="https://www.edx.org/course/astrophysics-cosmology" target="_blank">edX - Astrophysics: Cosmology</a></h4>
+							<p>
+								The "Astrophysics: Cosmology" course offered on edX provides a comprehensive resource for individuals interested in exploring the fascinating field of cosmology. This course covers a wide range of topics, including the Big Bang theory, the expansion of the universe, dark matter, dark energy, and the formation of galaxies. Through video lectures, interactive exercises, and assessments, learners can delve into the mysteries of the cosmos and understand the current theories and observations that shape our understanding of the universe. The course also explores the cosmic microwave background radiation, inflation, and the large-scale structure of the universe.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="cos">
+							<h4><a href="https://www.youtube.com/watch?v=0L_MvPLspdg&ab_channel=ProfessorDaveExplains" target="_blank">YouTube - Cosmology: A Big Bang and the Beginning of the Universe</a></h4>
+							<p>
+								In the YouTube video titled "Cosmology: A Big Bang and the Beginning of the Universe" by Professor Dave Explains, viewers are taken on an educational journey into the field of cosmology. This resource explores the Big Bang theory and the origins of the universe. The video covers topics such as the expansion of space, the cosmic microwave background radiation, and the formation of galaxies.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="sa">
+							<h4><a href="https://www.youtube.com/watch?v=y6Lz0RJhRos&ab_channel=SETIInstitute" target="_blank">YouTube - How Stars Form - Christopher McKee (SETI 2017)</a></h4>
+							<p>
+								In the SETI Institute lecture titled "How Stars Form" by Christopher McKee, viewers are immersed in the captivating process of star formation. This resource delves into the fundamental mechanisms and conditions that give birth to stars, shedding light on the complexities of stellar evolution. The lecture covers topics such as molecular clouds, gravitational collapse, protostellar disks, and the formation of stellar clusters. Through a combination of clear explanations, visual aids, and scientific insights, Christopher McKee provides an in-depth exploration of the processes that shape the birth of stars.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="sa">
+							<h4><a href="https://www.youtube.com/watch?v=ld75W1dz-h0&ab_channel=CrashCourse" target="_blank">YouTube - Stars: Crash Course Astronomy #26</a></h4>
+							<p>
+								In the YouTube video titled "Stars: Crash Course Astronomy #26" by CrashCourse, viewers embark on an exciting journey into the realm of stars. This resource offers an engaging exploration of various aspects of stars, including their formation, composition, and life cycles. The video covers topics such as stellar nurseries, nuclear fusion, main sequence stars, red giants, supernovae, and even black holes.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="cos">
+							<h4><a href="https://ocw.mit.edu/courses/res-8-007-cosmic-origin-of-the-chemical-elements-fall-2019/download/" target="_blank">MIT OCW - Cosmic Origin Of The Chemical Elements</a></h4>
+							<p>
+								The resource provided leads to download links for the course "Cosmic Origin of the Chemical Elements" from MIT OpenCourseWare. This course delves into the fascinating field of astrophysics and explores the origins of the chemical elements in the universe. Through lecture notes and materials, students can gain a deeper understanding of topics such as nucleosynthesis, stellar evolution, supernovae, and the formation of heavy elements. The course highlights the interconnectedness between astrophysics and chemistry, shedding light on how the elements that make up our world were forged in cosmic processes.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="sa">
+							<h4><a href="https://www.youtube.com/watch?v=4xIQGbYur9Q&ab_channel=ProfessorDaveExplains" target="_blank">YouTube - The Life and Death of Stars: White Dwarfs, Supernovae, Neutron Stars, and Black Holes</a></h4>
+							<p>
+								In the YouTube video titled "The Life and Death of Stars: White Dwarfs, Supernovae, Neutron Stars, and Black Holes" by Professor Dave Explains, viewers are taken on a captivating journey through the life cycles of stars. This resource explores the fascinating phenomena of white dwarfs, supernovae, neutron stars, and black holes. The video covers topics such as stellar evolution, nuclear fusion, stellar remnants, and the formation of compact objects.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="sa">
+							<h4><a href="https://imagine.gsfc.nasa.gov/educators/lessons/xray_spectra/background-lifecycles.html" target="_blank">NASA - The Life Cycles of Stars: How Supernovae Are Formed</a></h4>
+							<p>
+								The provided link leads to an educational resource titled "The Life Cycles of Stars: How Supernovae Are Formed" from NASA's Imagine the Universe program. This resource offers valuable insights into the life cycles of stars and the formation of supernovae. It provides background information on the various stages of stellar evolution, including the birth, evolution, and ultimate fate of stars. The resource explores how supernovae are formed and the critical role they play in the universe, releasing vast amounts of energy and creating heavy elements.
+							</p>
+						</td>
+					</tr>
+
+
+					<!-- bio nsci -->
+					<tr>
+						<td class="nphys">
+							<h4><a href="https://www.youtube.com/watch?v=ba-HMvDn_vU&ab_channel=MITOpenCourseWare" target="_blank">YouTube - 1. Introduction to the Human Brain</a></h4>
+							<p>
+								In the YouTube video titled "Introduction to the Human Brain" by MIT OpenCourseWare, viewers are introduced to the fascinating world of the human brain. This resource provides a comprehensive overview of the structure and function of the brain, covering topics such as neurons, neurotransmitters, brain regions, and neural circuits.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="nphys">
+							<h4><a href="https://www.youtube.com/watch?v=bAkuNXtgrLA&ab_channel=MITOpenCourseWare" target="_blank">YouTube - 2. Neuroanatomy</a></h4>
+							<p>
+								In the YouTube video titled "Neuroanatomy" by MIT OpenCourseWare, viewers delve into the intricate field of neuroanatomy. This resource provides a detailed exploration of the structure and organization of the nervous system, covering topics such as the brain, spinal cord, and peripheral nerves. The video offers visual illustrations, diagrams, and explanations to help learners understand the complex anatomical features of the nervous system.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="nphys">
+							<h4><a href="https://www.youtube.com/watch?v=MhapWJArTa0&ab_channel=LesleyWilliams" target="_blank">YouTube - Introduction to Neurophysiology</a></h4>
+							<p>
+								In the YouTube video titled "Introduction to Neurophysiology" by Lesley Williams, viewers are introduced to the fundamental principles of neurophysiology. This resource explores the electrical and chemical processes that occur within the nervous system, allowing for communication between neurons and the transmission of signals. The video covers topics such as the resting membrane potential, action potentials, synaptic transmission, and the role of neurotransmitters.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="nphys">
+							<h4><a href="https://www.edx.org/course/fundamentals-of-neuroscience-part-1-the-electrical" target="_blank">edX - Fundamentals of Neuroscience, Part 1: The Electrical Properties of the Neuron</a></h4>
+							<p>
+								The course "Fundamentals of Neuroscience, Part 1: The Electrical Properties of the Neuron" offered on edX provides a comprehensive introduction to the electrical properties of neurons. This resource explores the fundamental principles underlying neuronal function, including topics such as resting membrane potential, action potentials, and synaptic transmission.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="nphys">
+							<h4><a href="https://www.youtube.com/watch?v=2LzZMWGQe1k&ab_channel=NinjaNerd" target="_blank">YouTube - Neurology | Cerebral Cortex Anatomy & Function: Overview</a></h4>
+							<p>
+								In the YouTube video titled "Neurology | Cerebral Cortex Anatomy & Function: Overview" by Ninja Nerd, viewers are provided with a comprehensive overview of the anatomy and function of the cerebral cortex. This resource explores the intricate structures and regions of the cerebral cortex, highlighting their specific roles in cognition, sensation, and motor control.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="cns">
+							<h4><a href="https://www.youtube.com/watch?v=QZXP1g42CIY&ab_channel=BRAINPSYCHLOPEDIA" target="_blank">YouTube - What is computational neuroscience?</a></h4>
+							<p>
+								In the YouTube video titled "What is computational neuroscience?" by BRAINPSYCHLOPEDIA, viewers are introduced to the field of computational neuroscience. This resource provides an overview of computational neuroscience and its goal of understanding brain function through computational models and simulations. The video covers topics such as neural networks, information processing, and the integration of neuroscience and computer science.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="cns">
+							<h4><a href="https://www.coursera.org/learn/computational-neuroscience?action=enroll" target="_blank">Coursera - Computational Neuroscience</a></h4>
+							<p>
+								The "Computational Neuroscience" course available on Coursera offers a comprehensive introduction to the field of computational neuroscience. This resource explores the intersection of neuroscience, computer science, and mathematics, providing learners with the tools and techniques to model and understand the complex dynamics of the brain. Through video lectures, interactive exercises, and assignments, participants will explore topics such as neural coding, synaptic plasticity, network dynamics, and sensory processing. This course combines theoretical concepts with practical applications, allowing learners to develop computational models and simulations to gain insights into neural systems.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="cns">
+							<h4><a href="https://www.edx.org/course/computational-neuroscience-neuronal-dynamics-of-co" target="_blank">edX - Computational Neuroscience: Neuronal Dynamics of Cognition</a></h4>
+							<p>
+								The course "Computational Neuroscience: Neuronal Dynamics of Cognition" offered on edX provides an in-depth exploration of the neuronal dynamics underlying cognition. This resource delves into the computational principles and mathematical models used to understand the neural basis of cognitive processes. Through video lectures, interactive simulations, and problem sets, learners will delve into topics such as neural oscillations, attractor networks, working memory, and decision-making. The course emphasizes the integration of experimental data and computational approaches to study the complex dynamics of neural networks involved in cognitive functions.
+							</p>
+						</td>
+					</tr>
+					<!-- bio imm -->
+					<tr>
+						<td class="lym hyp">
+							<h4><a href="https://www.youtube.com/watch?v=FpXIGTFD8Qs&list=PLUl4u3cNGP63LmSVIVzy584-ZbjbJ-Y63&index=31&ab_channel=MITOpenCourseWare" target="_blank">YouTube - 30. Immunology 1 – Diversity, Specificity, & B cells</a></h4>
+							<p>
+								In the YouTube video titled "Immunology 1 – Diversity, Specificity, & B cells" by MIT OpenCourseWare, viewers dive into the fascinating field of immunology. This resource focuses on the diversity and specificity of the immune system, with a particular emphasis on B cells. The video covers topics such as antigen recognition, antibody production, and the processes involved in generating a diverse repertoire of B cells.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="lym mhc">
+							<h4><a href="https://www.youtube.com/watch?v=SqGmQ6CFYHw&list=PLUl4u3cNGP63LmSVIVzy584-ZbjbJ-Y63&index=32&ab_channel=MITOpenCourseWare" target="_blank">YouTube - 31. Immunology 2 – Memory, T cells, & Autoimmunity</a></h4>
+							<p>
+								In the YouTube video titled "Immunology 2 – Memory, T cells, & Autoimmunity" by MIT OpenCourseWare, viewers continue their exploration of immunology, focusing on memory, T cells, and autoimmunity. This resource delves into the mechanisms of immune memory, the role of T cells in immune responses, and the complexities of autoimmune diseases.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="hyp">
+							<h4><a href="https://www.youtube.com/watch?v=2tmw9x2Ot_Q&ab_channel=OsmosisfromElsevier" target="_blank">YouTube - Type I hypersensitivity (IgE-mediated hypersensitivity) - causes, symptoms, pathology</a></h4>
+							<p>
+								In the YouTube video titled "Type I Hypersensitivity (IgE-Mediated Hypersensitivity) - Causes, Symptoms, Pathology" by Osmosis from Elsevier, viewers are provided with a comprehensive overview of Type I hypersensitivity, also known as IgE-mediated hypersensitivity. This resource explores the underlying causes, symptoms, and pathological mechanisms involved in this allergic response. The video covers topics such as allergen exposure, IgE production, mast cell activation, and the release of inflammatory mediators. 
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="hyp">
+							<h4><a href="https://www.youtube.com/watch?v=dSM-TwWTtV0&ab_channel=PhysioPathoPharmaco" target="_blank">YouTube - Type II Hypersensitivity - Mechanisms (Described Concisely)</a></h4>
+							<p>
+								In the YouTube video titled "Type II Hypersensitivity - Mechanisms (Described Concisely)" by PhysioPathoPharmaco, viewers are presented with a concise description of Type II hypersensitivity. This resource explores the underlying mechanisms involved in this immune response, which occurs when antibodies target and attack specific cells or tissues. The video covers topics such as antigen recognition, antibody production, complement activation, and cell destruction.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="hyp">
+							<h4><a href="https://www.youtube.com/watch?v=NKnAXcM5Ly0&ab_channel=ArmandoHasudungan" target="_blank">YouTube - Hypersensitivity Type III (Immune complex hypersensitivity) - causes, pathophysiology</a></h4>
+							<p>
+								In the YouTube video titled "Hypersensitivity Type III (Immune Complex Hypersensitivity) - Causes, Pathophysiology" by Armando Hasudungan, viewers are provided with a comprehensive overview of Type III hypersensitivity, also known as immune complex hypersensitivity. This resource explores the underlying causes and pathophysiological mechanisms involved in this immune response. The video covers topics such as antigen-antibody complex formation, immune complex deposition, inflammation, and tissue damage.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="hyp">
+							<h4><a href="https://www.youtube.com/watch?v=kQFmrQfBW5k&ab_channel=PhysioPathoPharmaco" target="_blank">YouTube - Type IV Hypersensitivity (Described Concisely)</a></h4>
+							<p>
+								In the YouTube video titled "Type IV Hypersensitivity (Described Concisely)" by PhysioPathoPharmaco, viewers are presented with a concise description of Type IV hypersensitivity. This resource explores the underlying mechanisms involved in this delayed hypersensitivity response, which is mediated by T cells rather than antibodies. The video covers topics such as antigen presentation, T cell activation, and the release of inflammatory mediators.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="lym">
+							<h4><a href="https://www.khanacademy.org/science/biology/human-biology/immunology/v/b-lymphocytes-b-cells" target="_blank">Khan Academy - B lymphocytes (B cells)</a></h4>
+							<p>
+								The Khan Academy video titled "B Lymphocytes (B Cells)" provides an informative overview of B lymphocytes, also known as B cells. This resource explores the role of B cells in the immune system and their specific functions in the immune response. The video covers topics such as B cell development, antibody production, and the process of antigen recognition.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="lym">
+							<h4><a href="https://www.khanacademy.org/science/biology/human-biology/immunology/v/helper-t-cells" target="_blank">Khan Academy - Helper T cells</a></h4>
+							<p>
+								The Khan Academy video titled "Helper T Cells" provides a comprehensive overview of helper T cells and their role in the immune system. This resource explores the functions and activation of helper T cells in coordinating immune responses. The video covers topics such as antigen presentation, T cell receptor binding, cytokine secretion, and the differentiation of helper T cell subtypes.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="mhc">
+							<h4><a href="https://www.ncbi.nlm.nih.gov/books/NBK27156/" target="_blank">National Library of Medicine - The major histocompatibility complex and its functions</a></h4>
+							<p>
+								The resource you provided is a chapter titled "The Major Histocompatibility Complex and Its Functions" from the book "Immunobiology: The Immune System in Health and Disease" available on the NCBI Bookshelf. This chapter provides an in-depth exploration of the major histocompatibility complex (MHC) and its crucial role in immune responses. It covers topics such as the structure and organization of MHC molecules, antigen presentation, T cell recognition, and the role of MHC in immune regulation and transplantation. The chapter also discusses the diversity and polymorphism of MHC genes and their significance in immune responses.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="mhc">
+							<h4><a href="https://www.youtube.com/watch?v=yDAGxVxY-L8&ab_channel=AndreyK" target="_blank">YouTube - Major Histocompatibility Complex (MHC Class I and II)</a></h4>
+							<p>
+								In the YouTube video titled "Major Histocompatibility Complex (MHC Class I and II)" by Andrey K, viewers are provided with a clear and concise explanation of MHC Class I and Class II molecules and their functions in the immune system. This resource explores the structure and function of MHC molecules, the process of antigen presentation, and the role of MHC in immune responses. The video covers topics such as MHC diversity, peptide binding, T cell recognition, and the distinction between MHC Class I and Class II molecules.
+							</p>
+						</td>
+					</tr>
+					<!-- bio biochem2 -->
+					<tr>
+						<td class="be be2">
+							<h4><a href="https://www.youtube.com/watch?v=3fSY92mJwQY&list=PLUl4u3cNGP62wNcIMfinU64CAfreShjpt&index=6&ab_channel=MITOpenCourseWare" target="_blank">YouTube - 23. TCA Cycle II</a></h4>
+							<p>
+								In the YouTube video titled "TCA Cycle II" by MIT OpenCourseWare, viewers continue their exploration of the tricarboxylic acid (TCA) cycle, also known as the citric acid cycle or Krebs cycle. This resource delves deeper into the steps and mechanisms involved in this central metabolic pathway. The video covers topics such as the conversion of isocitrate to alpha-ketoglutarate, the generation of NADH and FADH2, and the overall energy production during the TCA cycle.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="bg bg2">
+							<h4><a href="https://www.youtube.com/watch?v=wI2RC3_Y1KA&list=PL5rTEahBdxV6prB_iWNU8N2-L5XAktld8&index=3&ab_channel=DirtyMedicine" target="_blank">YouTube - Pyruvate Pathways & Metabolism</a></h4>
+							<p>
+								In the YouTube video titled "Pyruvate Pathways & Metabolism" by Dirty Medicine, viewers are provided with an overview of the pathways and metabolism of pyruvate, a key molecule in cellular metabolism. This resource explores the fate of pyruvate and its conversion into various end products in different metabolic conditions. The video covers topics such as the conversion of pyruvate to acetyl-CoA, the regulation of pyruvate metabolism, and the connections between pyruvate and other metabolic pathways.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="bg bg2">
+							<h4><a href="https://www.youtube.com/watch?v=jWylU3CbPEE&list=PL5rTEahBdxV6prB_iWNU8N2-L5XAktld8&index=9&ab_channel=DirtyMedicine" target="_blank">YouTube - Fatty Acid Synthesis</a></h4>
+							<p>
+								In the YouTube video titled "Fatty Acid Synthesis" by Dirty Medicine, viewers are taken on a journey through the process of fatty acid synthesis, a fundamental metabolic pathway in the body. This resource explores the step-by-step synthesis of fatty acids, including the key enzymes and intermediates involved. The video covers topics such as acetyl-CoA carboxylase, malonyl-CoA, and the formation of long-chain fatty acids.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="bg bg2">
+							<h4><a href="https://www.youtube.com/watch?v=shM19vvmhWE&list=PL5rTEahBdxV6prB_iWNU8N2-L5XAktld8&index=11&ab_channel=DirtyMedicine" target="_blank">YouTube - Amino Acids</a></h4>
+							<p>
+								In the YouTube video titled "Amino Acids" by Dirty Medicine, viewers are introduced to the world of amino acids, the building blocks of proteins. This resource explores the structure, classification, and functions of amino acids in the human body. The video covers topics such as essential and non-essential amino acids, the role of amino acids in protein synthesis, and their involvement in various biological processes.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="bioinfo">
+							<h4><a href="https://www.youtube.com/watch?v=W-Ov2cUaYQY&ab_channel=TheExplorer%27sGuidetoBiology" target="_blank">YouTube - What is Bioinformatics?</a></h4>
+							<p>
+								In the YouTube video titled "What is Bioinformatics?" by The Explorer's Guide to Biology, viewers are introduced to the field of bioinformatics and its importance in biological research. This resource explores the intersection of biology, computer science, and statistics in analyzing and interpreting biological data. The video covers topics such as genome sequencing, sequence alignment, and phylogenetic analysis. 
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="bioinfo">
+							<h4><a href="https://www.coursera.org/specializations/bioinformatics" target="_blank">Coursera - Bioinformatics Specialization</a></h4>
+							<p>
+								The Bioinformatics Specialization offered on Coursera is a comprehensive program designed to provide learners with a solid foundation in bioinformatics. This specialization consists of a series of courses that cover a wide range of topics, including DNA sequencing, gene expression analysis, protein structure prediction, and genomic data analysis. Through hands-on assignments and practical projects, learners gain practical skills in using bioinformatics tools and algorithms to analyze biological data. Taught by experienced instructors, this specialization offers a valuable learning opportunity for individuals interested in pursuing a career or further studies in bioinformatics.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="bioinfo">
+							<h4><a href="https://www.edx.org/course/case-studies-in-functional-genomics" target="_blank">edX - Harvard University: Case Studies in Functional Genomics</a></h4>
+							<p>
+								The "Case Studies in Functional Genomics" course offered by Harvard University on the edX platform provides learners with an opportunity to delve into the field of functional genomics through real-world case studies. This course focuses on analyzing and interpreting large-scale genomic data to gain insights into biological processes and gene functions. By working through case studies, learners will gain hands-on experience in utilizing bioinformatics tools and methods for data analysis in functional genomics. Taught by experienced instructors, this course offers a valuable learning experience for individuals interested in genomics, molecular biology, and bioinformatics.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="bioinfo cns mm qchem">
+							<h4><a href="https://www.edx.org/course/statistics-and-r" target="_blank">edX - Harvard University: Statistics and R</a></h4>
+							<p>
+								The "Statistics and R" course offered by Harvard University on the edX platform is designed to provide learners with a solid foundation in statistical concepts and data analysis using the R programming language. This course covers essential statistical techniques, including descriptive statistics, probability, hypothesis testing, regression analysis, and ANOVA. Through hands-on exercises and assignments, learners will gain practical experience in using R for data manipulation, visualization, and statistical analysis. Taught by experienced instructors from Harvard University, this course offers a comprehensive introduction to statistical analysis and R programming.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="gea">
+							<h4><a href="https://www.youtube.com/watch?v=DeaLk8whdbk&ab_channel=ManolisKellis" target="_blank">YouTube - MIT CompBio Lecture 06 - Gene Expression Analysis: Clustering and Classification</a></h4>
+							<p>
+								In the "MIT CompBio Lecture 06 - Gene Expression Analysis: Clustering and Classification" video by Manolis Kellis, viewers are introduced to gene expression analysis techniques, specifically focusing on clustering and classification methods. This lecture explores how computational methods can be used to analyze gene expression data and identify patterns within large datasets. The video covers topics such as hierarchical clustering, k-means clustering, and different classification algorithms.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="gea">
+							<h4><a href="https://www.comp.nus.edu.sg/~wongls/courses/cs2220/2016/unit2_geneexpression-lxl.pdf" target="_blank">Lecture Slides - Unit 2: Gene expression analysis</a></h4>
+							<p>
+								In Unit 2 of the "CS2220: Introduction to Computational Biology" course offered by the National University of Singapore, students delve into gene expression analysis. This unit focuses on understanding the methods and algorithms used to analyze gene expression data, which plays a crucial role in understanding the functional aspects of genes. The provided resource, a lecture slide deck, covers topics such as gene expression profiling, microarray analysis, and RNA-seq analysis.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="phylo">
+							<h4><a href="https://www.youtube.com/playlist?list=PLXwjzs_mabFrlRF7uALEomfGGckG0sG5y" target="_blank">YouTube Playlist - Computational Molecular Evolution Course</a></h4>
+							<p>
+								The "Computational Molecular Evolution Course" playlist on YouTube offers a comprehensive series of video lectures that delve into the field of computational molecular evolution. This course covers a wide range of topics, including molecular phylogenetics, sequence alignment, phylogenetic inference methods, and population genetics. Through these lectures, students and enthusiasts can gain a deeper understanding of the computational tools and algorithms used to study the evolutionary relationships and dynamics of molecular sequences.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="phylo">
+							<h4><a href="https://www.youtube.com/watch?v=vi8v3bjTazc&list=PLjPAsbaa7pgGOrSPNBojU6lFCsJj7pvdJ&index=5&ab_channel=BiotechandBioinformaticswithProfGreg" target="_blank">YouTube - Phylogenetic trees: the basics</a></h4>
+							<p>
+								In the video titled "Phylogenetic Trees: The Basics" by Biotech and Bioinformatics with Prof Greg, viewers are introduced to the fundamental concepts of phylogenetic trees. This resource provides a clear and concise explanation of how phylogenetic trees are constructed to represent the evolutionary relationships between species or groups of organisms. The video covers topics such as tree terminology, tree building methods, and interpretation of tree branches and nodes.
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="phylo">
+							<h4><a href="https://www.cs.utexas.edu/~tandy/394C-2013-textbook.pdf" target="_blank">Textbook Excerpt Draft - Introduction to Computational Phylogenetics</a></h4>
+							<p>
+								"Introduction to Computational Phylogenetics" is a textbook written by Tandy Warnow that provides a comprehensive introduction to the field of computational phylogenetics. This resource covers various aspects of phylogenetic analysis, including sequence alignment, tree reconstruction methods, molecular evolution models, and statistical inference techniques. The textbook offers a blend of theoretical concepts and practical applications, making it suitable for both students and researchers interested in computational phylogenetics.
+							</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<script src="./learningresources/lr.js"></script>
+	</body>
+</html>
