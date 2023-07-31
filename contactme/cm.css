@@ -14,7 +14,7 @@ body {
 #form-container {
 	padding: 1.5em 2em;
 	border-radius: 5px;
-	border: 1px solid gray;
+	border: 1px solid #44444C;
 	background-color: whitesmoke;
 }
 
@@ -24,6 +24,8 @@ body {
 	height: 2.5em;
 	padding: .5em;
 	word-wrap: break-word;
+	border: 1px solid #44444C;
+	border-radius: 5px;
 }
 
 #form-container textarea {
@@ -35,9 +37,9 @@ body {
 	background-color: whitesmoke;
 	display: flex;
 	justify-content: center;
-	border: 1px solid gray;
+	border: 1px solid #44444C;
 	border-radius: 5px;
-	color: black;
+	color: #44444C;
 }
 
 #form-container #submit:hover {
