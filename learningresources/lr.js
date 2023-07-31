@@ -3,7 +3,7 @@ var checkedArr = [];
 console.log("total number of sources: " + totalTd())
 function totalTd() { // counts the number of listed resources
   let x = 0;
-  $("#table-lr td").each(function() {
+  $("#table-lr td").each(function () {
     x += 1;
   });
   return x;
@@ -96,17 +96,17 @@ function checkboxHierarchy(key) {
   const parentCheckbox = $("#" + key + "-cb");
   const childCheckboxes = childDiv.find("." + key + "-sub");
 
-  parentCheckbox.on("change", function() {
+  parentCheckbox.on("change", function () {
     childCheckboxes.prop("checked", parentCheckbox.prop("checked"));
     childCheckboxes.trigger("change"); // updates the child checkboxes' states
   });
 
-  childDiv.on("change", function() {
+  childDiv.on("change", function () {
     if (!childCheckboxes.prop("checked")) {
       parentCheckbox.prop("checked", false);
     }
     else {
-      const allChildCheckboxesChecked = childCheckboxes.toArray().every(cb => $(cb).prop("checked"));
+      let allChildCheckboxesChecked = childCheckboxes.toArray().every(cb => $(cb).prop("checked"));
       parentCheckbox.prop("checked", allChildCheckboxesChecked);
     }
   });
@@ -165,9 +165,9 @@ function filterItems(filterClass) {
   checkbox.trigger("change"); // runs the function at every refresh to initialize features
 }
 
-$('input').on('change', function() { // handles the text for #numSources
+$('input').on('change', function () { // handles the text for #numSources
   let x = 0;
-  $("#table-lr td").each(function() {
+  $("#table-lr td").each(function () {
     if ($(this).is(":visible")) {
       x += 1;
     }

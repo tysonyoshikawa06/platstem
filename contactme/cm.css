@@ -43,10 +43,6 @@ body {
 	background-color: lightgray;
 }
 
-#form-container textarea {
-	min-height: 4em;
-}
-
 #form-container label {
 	margin-top: 1em;
 }

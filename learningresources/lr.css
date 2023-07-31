@@ -21,6 +21,7 @@ body {
 
 #side-nav-btn {
 	margin-left: .5em;
+	position: absolute;
 }
 
 #numSourcesContainer {
@@ -90,8 +91,10 @@ div .offcanvas-body {
 
 #menu label, #menu input {
 	padding: .1em;
+	cursor: pointer;
 }
 
 #navbar-container {
 	padding: .3em;
+	padding-left: .5em;
 }
