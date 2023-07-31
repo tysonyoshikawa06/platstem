@@ -37,7 +37,7 @@ body {
 	justify-content: center;
 	border: 1px solid gray;
 	border-radius: 5px;
-	color: gray;
+	color: black;
 }
 
 #form-container #submit:hover {
