@@ -1,36 +1,36 @@
 displayGeneralInfo();
 
 $(".nav-btn").on("click", function () {
-  if (!$(this).hasClass("active")) {
-    $(".nav-btn").removeClass("active").css("background-color", "whitesmoke");
-    $(this).addClass("active").css("background-color", "lightgray");
+  if (!$(this).hasClass("current")) {
+    $(".nav-btn").removeClass("current").css("background-color", "#F5F5F5");
+    $(this).addClass("current").css("background-color", "#8DB48E");
   }
   else {
-    $(this).removeClass("active").css("background-color", "whitesmoke");
+    $(this).removeClass("current").css("background-color", "#F5F5F5");
   }
   displayGeneralInfo();
   let currentOlympiad = $("." + $(this).attr("id"));
-  if ($(this).hasClass("active")) {
-    $(".row").css("display", "none"); // gets rid of all rows that are inactive
+  if ($(this).hasClass("current")) {
+    $(".row").css("display", "none"); // gets rid of all rows that are incurrent
     currentOlympiad.fadeIn(300); // displays the current row
   }
 });
 
 $(".nav-btn").on("mouseenter", function () {
-  if (!$(this).hasClass("active")) {
-    $(this).css("background-color", "lightgray");
+  if (!$(this).hasClass("current")) {
+    $(this).css("background-color", "#8DB48E");
   }
 });
 
 $(".nav-btn").on("mouseleave", function () {
-  if (!$(this).hasClass("active")) {
-    $(this).css("background-color", "whitesmoke");
+  if (!$(this).hasClass("current")) {
+    $(this).css("background-color", "#F5F5F5");
   }
 });
 
 function displayGeneralInfo() {
-  let anyActiveButtons = $(".nav-btn.active").length > 0;
-  if (anyActiveButtons) {
+  let anyCurrentButtons = $(".nav-btn.current").length > 0;
+  if (anyCurrentButtons) {
     $("#info").css("display", "none");
   }
   else {
