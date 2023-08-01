@@ -9,6 +9,22 @@ function totalTd() { // counts the number of listed resources
   return x;
 }
 
+// side nav img size handler 
+var screenSize = window.matchMedia("(max-width: 700px)")
+myFunction(screenSize)
+screenSize.addListener(myFunction)
+
+function myFunction(screenSize) {
+  if (screenSize.matches) {
+    $("#side-nav-img").removeClass("fa-2x");
+    $("#side-nav-img").addClass("fa-lg");
+  }
+  else {
+    $("#side-nav-img").removeClass("fa-lg");
+    $("#side-nav-img").addClass("fa-2x");
+  }
+}
+
 // cs
 checkboxHierarchy("ml");
 filterItems("mll");

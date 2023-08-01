@@ -16,7 +16,6 @@ body {
 #title-container {
 	display: flex;
 	justify-content: center;
-	padding-top: .6em;
 	padding: .6em 0 .3em 0;
 	background-color: #F5F5F5;
 	color: #4D724D;
@@ -34,6 +33,7 @@ body {
 	margin-left: 1em;
 	position: absolute;
 	margin-bottom: 1em;
+	padding-top: .85em;
 }
 
 #numSourcesContainer {
@@ -74,6 +74,7 @@ body {
 	padding: 1em;
 	display: none;
 	background-color: #F5F5F5;
+	border-radius: 15px;
 }
 
 #table-lr td a {
