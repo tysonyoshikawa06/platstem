@@ -40,12 +40,19 @@ body {
 	font-size: 1.3em;
 }
 
+#title-container-container {
+	display: flex;
+	justify-content: center;
+}
 
+/* DIFFERENT FROM OTHER TITLE CONTAINERS */
 #title-container {
 	display: flex;
 	justify-content: center;
 	padding-top: .6em;
 	padding: .6em 0 .3em 0;
+	border: 1px solid black;
+	width: 80%;
 	background-color: #F5F5F5;
 	color: #4D724D;
 	font-family: satoshi-bold;
