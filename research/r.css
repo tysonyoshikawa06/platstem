@@ -1,0 +1,71 @@
+@font-face {
+	font-family: satoshi;
+	src: url(../Satoshi-Variable.ttf);
+}
+
+@font-face {
+	font-family: satoshi-bold;
+	src: url(../Satoshi-Bold.otf);
+}
+
+body {
+	background-color: #F5F5F5;
+	font-family: satoshi;
+}
+
+#box {
+	padding: 1% 5% 5% 5%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+	margin: 0% 10% 0 10%;
+	color: black;
+	background-color: #F5F5F5;
+}
+
+.emphasis {
+	color: #4D724D;
+	font-weight: bold;
+}
+
+#info {
+	display: none;
+	width: 80%;
+	display: flex;
+	display: none;
+	font-size: 2vh;
+	text-align: center;
+	margin-top: 1em;
+	font-size: 1.3em;
+}
+
+
+#title-container {
+	display: flex;
+	justify-content: center;
+	padding-top: .6em;
+	padding: .6em 0 .3em 0;
+	background-color: #F5F5F5;
+	color: #4D724D;
+	font-family: satoshi-bold;
+}
+
+#navbar-container {
+	padding-left: 1em;
+	color: #F5F5F5;
+}
+
+#navbar {
+	margin-bottom: .5em;
+}
+
+#navbar li a {
+	color: #4D724D;
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+.active {
+	color: #8DB48E !important;
+}
